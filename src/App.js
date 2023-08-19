@@ -1,8 +1,13 @@
 import HomeMain from './pages/Home';
+import ServicesMain from './pages/Services';
 
 function App() {
   return (
-    <HomeMain/>
+    <>
+     {/* <HomeMain/> */}
+    <ServicesMain />
+    </>
+   
   );
 }
 

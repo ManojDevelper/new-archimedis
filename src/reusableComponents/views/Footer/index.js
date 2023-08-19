@@ -47,7 +47,7 @@ function Footer() {
                     paddingTop: "35px",
                   }}
                 >
-                  <Col span={7} >
+                  <Col span={7}>
                     <img
                       style={{ width: "114px", height: "70px" }}
                       src={videoCover2}
@@ -67,7 +67,7 @@ function Footer() {
               </div>
             </div>
           </Col>
-          <Col className="gutter-row" style={{paddingLeft: '70px'}} span={7}>
+          <Col className="gutter-row" style={{ paddingLeft: "70px" }} span={7}>
             <div>
               <div>
                 <h3>Home</h3>
@@ -77,7 +77,7 @@ function Footer() {
                   <li>Lorem ipsum dolor cet</li>
                 </ul>
               </div>
-              <div style={{marginTop: '75px'}}>
+              <div style={{ marginTop: "75px" }}>
                 <h3>What we do</h3>
                 <ul>
                   <li>Lorem ipsum dolor</li>
@@ -97,7 +97,7 @@ function Footer() {
                   <li>Lorem ipsum</li>
                 </ul>
               </div>
-              <div style={{marginTop: '75px'}}>
+              <div style={{ marginTop: "75px" }}>
                 <h3>Why us</h3>
                 <ul>
                   <li>Lorem ipsum dolor</li>
@@ -120,15 +120,24 @@ function Footer() {
           </Col>
         </Row>
         <div className="footer-copyright">
-            <div>
-                <img src={instagram} alt="img"/>
-                <img src={facebook} alt="img"/>
-                <img src={twitter} alt="img"/>
-                <img src={youtube} alt="img"/>
-                <img src={linkedin} alt="img"/>
-            </div>
-            <p>Copyright © 2023 Archimedis Digital . All rights reserved.</p>
-
+          <div>
+            <a href="#">
+              <img src={instagram} alt="Instagram" />
+            </a>
+            <a href="#">
+              <img src={facebook} alt="Facebook" />
+            </a>
+            <a href="#">
+              <img src={twitter} alt="Twitter" />
+            </a>
+            <a href="#">
+              <img src={youtube} alt="YouTube" />
+            </a>
+            <a href="#">
+              <img src={linkedin} alt="LinkedIn" />
+            </a>
+          </div>
+          <p>Copyright © 2023 Archimedis Digital . All rights reserved.</p>
         </div>
       </div>
     </FooterStyle>
