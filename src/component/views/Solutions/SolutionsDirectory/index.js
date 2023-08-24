@@ -18,7 +18,7 @@ function SolutionsDirectory() {
   return (
     <ServicesDirectoryStyle>
          <div className='solutions-directory'>
-            <h1>Services Directory</h1>
+            <h1>Lorem ipsum dolor</h1>
          <Row gutter={16}>
       <Col span={8}>
         <div>

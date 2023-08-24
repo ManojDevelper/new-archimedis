@@ -25,8 +25,8 @@ function LifeScience() {
             span={14}
             style={{
                 display:'flex',
-    flexdirection: 'column',
-    gap: '25px'
+                flexDirection: 'column',
+                gap: '25px'
             }}
           >
               <Row style={{ display: "flex", alignItems: "center" }}>
