@@ -5,10 +5,12 @@ import Banner from "../../component/views/Solutions/Banner";
 import LifeScience from "../../component/views/Solutions/LifeScience";
 import SolutionsDirectory from "../../component/views/Solutions/SolutionsDirectory";
 import CaseStudies from "../../component/views/Solutions/CaseStudies";
+import Navbar from "../../reusableComponents/views/Navbar";
 
 const SolutionsMain = () => {
   return (
     <Fragment>
+      <Navbar />
       <Banner />
       <LifeScience />
       <SolutionsDirectory />

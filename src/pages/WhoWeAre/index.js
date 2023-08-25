@@ -7,10 +7,12 @@ import AboutUs from "../../component/views/WhoWeAre/AboutUs";
 import AboutCard from "../../component/views/WhoWeAre/AboutUs/card";
 import MeetTeam from "../../component/views/WhoWeAre/MeetTeam";
 import OurValues from "../../component/views/WhoWeAre/AboutUs/ourValues";
+import Navbar from "../../reusableComponents/views/Navbar";
 
 const WhoweareMain = () => {
   return (
     <Fragment>
+      <Navbar />
       <Banner />
       <AboutUs />
       {/* <AboutCard />
