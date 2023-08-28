@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as palette from "../../../../styles/variables";
+// import * as palette from "../../../../styles/variables";
 import bannerBg from "../../../../../src/assets/solutions/banner/banner_bg.png";
 
 export const BannerStyle = styled.div`

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as palette from "../../../styles/variables";
+// import * as palette from "../../../styles/variables";
 import footerBg from "../../../assets/reusableComponents/footer/footer-bg.png";
 
 export const FooterStyle = styled.div`

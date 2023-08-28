@@ -1,6 +1,6 @@
 import React from 'react';
 import { AboutUsStyle } from './styles'
-import { Col, Row, Button } from "antd";
+import { Col, Row } from "antd";
 import aboutus1 from '../../../../assets/whoWeAre/aboutUs/aboutus1.svg';
 import aboutus2 from '../../../../assets/whoWeAre/aboutUs/aboutus2.svg';
 
