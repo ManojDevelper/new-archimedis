@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import * as palette from "../../../styles/variables";
-import footerBg from "../../../assets/reusableComponents/footer/footer-bg.png";
+// import footerBg from "../../../assets/reusableComponents/footer/footer-bg.png";
 
 export const FooterStyle = styled.div`
   .footer {
     margin-top: 30px;
     padding: 30px 100px 65px;
-    background-image: url(${footerBg});
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    // background-repeat: no-repeat;
+    background: #142E5F;
     h2 {
       font-size: 24px;
       font-weight: 500;
