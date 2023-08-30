@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import * as palette from "../../../../styles/variables";
+// import * as palette from "../../../../styles/variables";
 
 export const MeetTeamStyle = styled.div`
   .meet-team {

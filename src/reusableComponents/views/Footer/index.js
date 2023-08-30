@@ -1,6 +1,6 @@
 import React from "react";
 import { FooterStyle } from "./styles";
-import { Col, Divider, Row } from "antd";
+import { Col, Row } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
 import videoCover1 from "../../../assets/reusableComponents/footer/video-cover1.png";
 import videoCover2 from "../../../assets/reusableComponents/footer/video-cover2.png";

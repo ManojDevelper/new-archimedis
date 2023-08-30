@@ -9,9 +9,9 @@ function OurValues() {
  <div className='our-values'>
         <h3>Our Values</h3>
         <ul>
-           <li><img src={ourValue1} /> Be Socially Responsible</li> 
-           <li><img src={ourValue2} /> Deliver High Value at optimized costs</li> 
-           <li><img src={ourValue3} /> Celebrate Diversity</li> 
+           <li><img src={ourValue1} alt='img'/> Be Socially Responsible</li> 
+           <li><img src={ourValue2} alt='img'/> Deliver High Value at optimized costs</li> 
+           <li><img src={ourValue3} alt='img'/> Celebrate Diversity</li> 
         </ul>
     </div>
     </OurValuesStyle>

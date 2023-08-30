@@ -3,10 +3,10 @@ import { ServicesDirectoryStyle } from './styles';
 import { Col, Row } from 'antd';
 import { CaretRightOutlined } from "@ant-design/icons";
 import solutionsDirectoryImg from '../../../../assets/solutions/solutionsDirectory/solutionsDirectory.svg';
-import serviceIcon1 from '../../../../assets/services/servicesDirectory/services_icon1.svg';
-import serviceIcon2 from '../../../../assets/services/servicesDirectory/services_icon2.svg';
-import serviceIcon3 from '../../../../assets/services/servicesDirectory/services_icon3.svg';
-import serviceIcon4 from '../../../../assets/services/servicesDirectory/services_icon4.svg';
+// import serviceIcon1 from '../../../../assets/services/servicesDirectory/services_icon1.svg';
+// import serviceIcon2 from '../../../../assets/services/servicesDirectory/services_icon2.svg';
+// import serviceIcon3 from '../../../../assets/services/servicesDirectory/services_icon3.svg';
+// import serviceIcon4 from '../../../../assets/services/servicesDirectory/services_icon4.svg';
 
 function SolutionsDirectory() {
 
