@@ -28,9 +28,23 @@ const AboutUs = () => {
           </Col>
         </Row>
         </div>
+        <div className='aboutus-top-mob'>
+             <div className='aboutus-bg-container'>
+                 <img className='aboutus-bg-container-img' src={aboutus2} alt="bgimg" />
+                 <div className='aboutus-main-container'>
+                      <img 
+                       src={aboutus1} alt="img" />
+                 </div>
+            </div>
+            <div className='aboutus-top-mob-content'>
+               <h1>Who we are</h1>
+               <p className='aboutus-text'>We operate at the intersection of Digital and Life SciencesWe operate at the intersection of Digital and Life SciencesMedical DevicesCROs & Supply-ChainDigital Health  ProductsMedical ResearchDigital Health  ProductsPharma &Bio TechLife Sciences SaaSPharma & Bio TechCROs & Supply-ChainMedical DevicesLife Sciences SaaS</p>
+               <Button className='aboutus-top-btn'>Know More <ArrowRightOutlined style={{ marginLeft: "5px" }} /></Button>
+            </div>
+        </div>
         <div className='aboutus-bottom'>
         <Row style={{display: 'flex', alignItems: 'center'}}>
-          <Col span={11} style={{backgroundColor: '#275CBE',  padding: '5px 50px 20px 40px'}}>
+          <Col className='aboutus-bottom-casestudy' span={11} style={{backgroundColor: '#275CBE',  padding: '5px 50px 20px 40px'}}>
            <h3>
            Case Studies
            </h3>
@@ -49,7 +63,25 @@ const AboutUs = () => {
           </Col>
         </Row>
         </div>
-
+        <div className='aboutus-bottom-mob'>
+        <div className='aboutus-bottom-mob-content'>
+            <h1>Why us</h1>
+            <p className='aboutus-text'>We operate at the intersection of Digital and Life SciencesWe operate at the intersection of Digital and Life SciencesMedical DevicesCROs & Supply-ChainDigital Health  ProductsMedical ResearchDigital Health  ProductsPharma &Bio TechLife Sciences SaaSPharma & Bio TechCROs & Supply-ChainMedical DevicesLife Sciences SaaS</p>
+            <Button className='aboutus-bottom-btn'>Know More <ArrowRightOutlined style={{ marginLeft: "5px" }} /></Button>
+         </div>
+         <div  className='aboutus-bottom-mob-casestudy'>
+           <h3>
+           Case Studies
+           </h3>
+           <img style={{width: "100%"}} src={aboutusBot} alt="img"/>
+           <h3 style={{margin: '12px 0 0px'}}>
+           Lorem ipsum dolor colon cet dolor
+           </h3>
+           <p className='casestudy-text'>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer cet lorem.
+           </p>
+          </div>
+        </div>
         </div>
        
     </AboutUsStyle>

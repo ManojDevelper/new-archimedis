@@ -9,12 +9,15 @@ const WeDo = () => {
   return (
     <WeDoStyle>
       <div className="weDo">
-        <h1>What we do?</h1>
-        <p className="weDo-text">
-          We help life science clients with digital products and services
-        </p>
+        <div className="weDo-content">
+          <h1>What we do?</h1>
+          <p className="weDo-text">
+            We help life science clients with digital products and services
+          </p>
+        </div>
+      
           <Row gutter={35}>
-            <Col span={8}>
+            <Col span={8} className="weDo-card1">
               <Card
                 bordered={false}
                 hoverable
@@ -42,7 +45,7 @@ const WeDo = () => {
                 
               </Card>
             </Col>
-            <Col span={8}>
+            <Col span={8} className="weDo-card2">
                 <Card
                   hoverable
                   style={{
@@ -68,7 +71,7 @@ const WeDo = () => {
                 </div>
                 </Card>
             </Col>
-            <Col span={8}>
+            <Col span={8} className="weDo-card3">
                 <Card
                   bordered={false}
                   hoverable

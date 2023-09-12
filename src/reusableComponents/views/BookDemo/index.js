@@ -23,6 +23,17 @@ const BookDemo = () => {
           </Col>
         </Row>
       </div>
+      <div className="book-demo-mob">   
+      <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', backdropFilter: 'blur(0.5px)', padding: '53px 0', textAlign: 'center'}}>
+      <h1>Ready to get started?</h1>
+            <p>Book a demo or contact us</p>
+            <div>
+              <Button className="book-btn">Book a consultation</Button>
+              <Button className="contact-btn">Contact us</Button>
+            </div>
+      </div>
+        
+      </div>
     </BookDemoStyle>
   );
 };
