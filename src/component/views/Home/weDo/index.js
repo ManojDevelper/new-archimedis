@@ -16,7 +16,7 @@ const WeDo = () => {
           We help life science clients with digital products and services
         </p>
         <Row gutter={35}>
-          <Col span={8}>
+          <Col span={8} className="weDo-card1">
             <Card
               bordered={false}
               hoverable
@@ -44,7 +44,7 @@ const WeDo = () => {
               </div>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col span={8} className="weDo-card2">
             <Card
               hoverable
               style={{
@@ -71,7 +71,7 @@ const WeDo = () => {
               </div>
             </Card>
           </Col>
-          <Col span={8}>
+          <Col span={8} className="weDo-card3">
             <Card
               bordered={false}
               hoverable

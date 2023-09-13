@@ -3,21 +3,25 @@ import styled from "styled-components";
 // import bannerBg from "../../../../../src/assets/home/banner/bannerBg.png";
 
 export const BannerStyle = styled.div`
+  .banner-mob {
+    display: none;
+  }
+
   background-color: #275cbe;
   .banner {
     ${"" /* background-image: url(${bannerBg}); */}
     position: relative;
+
     h1 {
       color: #ffffff;
-      font-family: Inter;
       font-size: 72px;
       font-weight: 700;
       line-height: 80px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
+
     p {
       color: #ffffff;
-      font-family: Inter;
       font-size: 20px;
       font-weight: 500;
       line-height: 34px;

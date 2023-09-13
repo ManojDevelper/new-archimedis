@@ -22,7 +22,7 @@ function Footer() {
                 faucibus viverra, India 600111
               </p>
               <div className="video-cover-container">
-                <Row style={{ display: "flex", alignItems: "center" }}>
+                <Row className="video-cover-row">
                   <Col span={7}>
                     <img
                       style={{ width: "114px", height: "70px" }}
@@ -40,12 +40,7 @@ function Footer() {
                     </p>
                   </Col>
                 </Row>
-                <Row
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    paddingTop: "35px",
-                  }}
+                <Row className="video-cover-row"
                 >
                   <Col span={7}>
                     <img
@@ -67,7 +62,7 @@ function Footer() {
               </div>
             </div>
           </Col>
-          <Col className="gutter-row" style={{ paddingLeft: "70px" }} span={7}>
+          <Col className="gutter-row home-row"  span={7}>
             <div>
               <div>
                 <h3>Home</h3>
@@ -77,7 +72,7 @@ function Footer() {
                   <li>Lorem ipsum dolor cet</li>
                 </ul>
               </div>
-              <div style={{ marginTop: "75px" }}>
+              <div className="whatwedo-content">
                 <h3>What we do</h3>
                 <ul>
                   <li>Lorem ipsum dolor</li>
@@ -88,7 +83,7 @@ function Footer() {
               </div>
             </div>
           </Col>
-          <Col className="gutter-row" span={5}>
+          <Col className="gutter-row whoweare-row" span={5}>
             <div>
               <div>
                 <h3>Who we are</h3>
@@ -97,7 +92,7 @@ function Footer() {
                   <li>Lorem ipsum</li>
                 </ul>
               </div>
-              <div style={{ marginTop: "75px" }}>
+              <div className="whyus-content">
                 <h3>Why us</h3>
                 <ul>
                   <li>Lorem ipsum dolor</li>
@@ -108,7 +103,7 @@ function Footer() {
               </div>
             </div>
           </Col>
-          <Col className="gutter-row" span={4}>
+          <Col className="gutter-row contact-row" span={4}>
             <div>
               <h3>Contact</h3>
               <ul>
