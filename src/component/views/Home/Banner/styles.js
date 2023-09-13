@@ -53,6 +53,7 @@ export const BannerStyle = styled.div`
       margin-right: -2px;
       border-top-left-radius: 12px;
       border-bottom-left-radius: 12px;
+      z-index: 2;
     }
 
     .banner-links a {
