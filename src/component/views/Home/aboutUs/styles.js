@@ -9,7 +9,7 @@ export const AboutUsStyle = styled.div`
     display: none;
   }
   .about-us {
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
     h1 {
       font-size: 48px;
       font-weight: 700;
@@ -19,7 +19,7 @@ export const AboutUsStyle = styled.div`
     h3 {
       font-size: 24px;
       font-weight: 600;
-      color: #ffffff;
+      color: #212121;
     }
     .aboutus-text {
       font-size: 18px;
@@ -100,7 +100,10 @@ export const AboutUsStyle = styled.div`
       font-size: 18px;
       font-weight: 400;
       margin-top: 10px;
-      color: #ffffff;
+      color: #212121;
+    }
+    .aboutus-bottom-casestudy{
+      padding: 25px 0 25px 67px;
     }
   }
   @media (max-width: 768px) {

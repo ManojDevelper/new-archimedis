@@ -1,6 +1,7 @@
 import styled from "styled-components";
 // import * as palette from "../../../styles/variables";
 import bookDemoBg from "../../../../src/assets/reusableComponents/bookDemo/bookDemoMob.svg";
+import bookDemoImg from "../../../../src/assets/reusableComponents/bookDemo/bookDemoImg2.png";
 export const BookDemoStyle = styled.div`
   .book-demo-mob {
     display: none;
@@ -8,7 +9,7 @@ export const BookDemoStyle = styled.div`
   .book-demo {
     ${'' /* text-align: center;
     padding-bottom: 50px; */}
-    margin: 90px 100px;
+    background-color: #02060C;
     position: relative;
     h1 {
       margin: 0;
@@ -25,6 +26,13 @@ export const BookDemoStyle = styled.div`
       font-weight: 450;
       line-height: 32px;
     }
+    .bookdemo-img-container{
+      background-image: url(${bookDemoImg});
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 400px;
+    }
     img {
       width: 73%;
       position: absolute;
@@ -33,10 +41,23 @@ export const BookDemoStyle = styled.div`
     }
     .book-demo-container {
       display: flex;
+      justify-content: center;
     }
+    .bg-trans-border-white-txt .back_animation {
+      background-color: transparent !important;
+    }
+   
+     .bg-trans-border-white-txt {
+      background-color: transparent !important;
+  }
     .banner-btn {
       width: 268px !important;
       margin-right: 20px;
+    }
+    .book-demo-right{
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
     }
   }
   @media (max-width: 768px) {

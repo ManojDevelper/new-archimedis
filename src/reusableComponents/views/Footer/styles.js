@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 export const FooterStyle = styled.div`
   .footer {
-    margin-top: 30px;
+    // margin-top: 30px;
     padding: 30px 100px 65px;
     ${
       "" /* // background-size: 100% 100%;

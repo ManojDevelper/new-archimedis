@@ -44,7 +44,8 @@ const AboutUs = () => {
         </div>
         <div className='aboutus-bottom'>
         <Row style={{display: 'flex', alignItems: 'center'}}>
-          <Col className='aboutus-bottom-casestudy' span={11} style={{backgroundColor: '#275CBE',  padding: '5px 50px 20px 40px'}}>
+          <Col className='aboutus-bottom-casestudy' span={11} >
+          <div style={{backgroundColor: '#ffffff',  padding: '5px 50px 20px 40px'}}>
            <h3>
            Case Studies
            </h3>
@@ -57,8 +58,9 @@ const AboutUs = () => {
            <p className='casestudy-text'>
            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer cet lorem.
            </p>
+           </div>
           </Col>
-          <Col span={13} style={{padding: '0 85px'}}>
+          <Col span={13} style={{padding: '0 66px'}}>
           <h1>Why us</h1>
             <p className='aboutus-text'>We operate at the intersection of Digital and Life SciencesWe operate at the intersection of Digital and Life SciencesMedical DevicesCROs & Supply-ChainDigital Health  ProductsMedical ResearchDigital Health  ProductsPharma &Bio TechLife Sciences SaaSPharma & Bio TechCROs & Supply-ChainMedical DevicesLife Sciences SaaS</p>
             <ButtonCompo text="Know More" type="bg-blue-border-black-txt"/>
