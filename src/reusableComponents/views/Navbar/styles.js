@@ -222,16 +222,20 @@ export const NavbarStyle = styled.div`
     align-items: center;
     padding: 15px 8px 15px 16px;
   }
-  .nav-accordion-toggle {
-    font-size: 24px;
-    opacity: 70%;
-  }
+  // .nav-accordion-toggle {
+  //   font-size: 24px;
+  //   opacity: 70%;
+  // }
   .nav-media {
-    display: flex;
-    gap: 30px;
-    margin: 32px auto 21px;
-    justify-content: center;
-    align-items: center;
-    opacity: 80%;
+    display: block;
+   
+  }
+  .banner-btn{
+    background-color: #0052FE;
+    margin-top: 60px;
+    width: 358px;
+  }
+  .bg-blue-border {
+    border: 1px solid #0052FE;
   }
 `;

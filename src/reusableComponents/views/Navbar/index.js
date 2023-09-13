@@ -4,6 +4,7 @@ import { UpOutlined, DownOutlined, MenuOutlined, CloseOutlined } from "@ant-desi
 import { Button } from "antd";
 import { NavbarStyle } from "./styles";
 import { Link } from "react-router-dom";
+import ButtonCompo from "../../../reusableComponents/views/Button";
 import instagram from "../../../assets/reusableComponents/navbar/nav-insta.svg";
 import facebook from "../../../assets/reusableComponents/navbar/nav-fb.svg";
 import linkedin from "../../../assets/reusableComponents/navbar/nav-linkedin.svg";
@@ -119,7 +120,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <span className="nav-accordion-toggle">
-                    {isActive1 ? "-" : "+"}
+                    {isActive1 ? <UpOutlined/> : <DownOutlined/>}
                   </span>
                 </button>
                 <div className="faq-answer">
@@ -138,7 +139,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <span className="nav-accordion-toggle">
-                    {isActive2 ? "-" : "+"}
+                    {isActive2 ? <UpOutlined/> : <DownOutlined/>}
                   </span>
                 </button>
                 <div className="faq-answer">
@@ -157,7 +158,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <span className="nav-accordion-toggle">
-                    {isActive3 ? "-" : "+"}
+                    {isActive3 ? <UpOutlined/> : <DownOutlined/>}
                   </span>
                 </button>
                 <div className="faq-answer">
@@ -176,7 +177,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <span className="nav-accordion-toggle">
-                    {isActive4 ? "-" : "+"}
+                    {isActive4 ? <UpOutlined/> : <DownOutlined/>}
                   </span>
                 </button>
                 <div className="faq-answer">
@@ -187,27 +188,9 @@ function Navbar() {
                   </ul>
                 </div>
               </div>
-
-              <li style={{ padding: "15px 16px" }}>
-                <Link className="Link">Contact Us</Link>
-              </li>
             </ul>
             <div className="nav-media">
-              <a href="#">
-                <img src={instagram} alt="Instagram" />
-              </a>
-              <a href="#">
-                <img src={facebook} alt="Facebook" />
-              </a>
-              <a href="#">
-                <img src={twitter} alt="Twitter" />
-              </a>
-              <a href="#">
-                <img src={youtube} alt="YouTube" />
-              </a>
-              <a href="#">
-                <img src={linkedin} alt="LinkedIn" />
-              </a>
+                <ButtonCompo text="Book a Demo" type="bg-blue-border"/>
             </div>
           </div>
         </>
