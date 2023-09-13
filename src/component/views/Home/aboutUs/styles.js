@@ -127,6 +127,12 @@ export const AboutUsStyle = styled.div`
         text-align: center;
         color: #0f1629;
       }
+      .banner-btn{
+      width: 182px;
+      height: 52px;
+      margin-left: auto;
+      margin-right: auto;
+      }
       .aboutus-bg-container-img {
         margin-left: 15px;
       }
@@ -181,6 +187,12 @@ export const AboutUsStyle = styled.div`
         text-align: center;
         color: #0f1629;
       }
+      .banner-btn{
+        width: 182px;
+        height: 52px;
+        margin-left: auto;
+        margin-right: auto;
+        }
       .aboutus-text {
         font-family: IBM Plex Sans;
         font-size: 16px;

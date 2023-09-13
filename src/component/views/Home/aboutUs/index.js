@@ -69,7 +69,7 @@ const AboutUs = () => {
         <div className='aboutus-bottom-mob-content'>
             <h1>Why us</h1>
             <p className='aboutus-text'>We operate at the intersection of Digital and Life SciencesWe operate at the intersection of Digital and Life SciencesMedical DevicesCROs & Supply-ChainDigital Health  ProductsMedical ResearchDigital Health  ProductsPharma &Bio TechLife Sciences SaaSPharma & Bio TechCROs & Supply-ChainMedical DevicesLife Sciences SaaS</p>
-            <ButtonCompo text="Know More" type="bg-blue-border"/>
+            <ButtonCompo text="Know More" type="bg-blue-border-black-txt"/>
          </div>
          <div  className='aboutus-bottom-mob-casestudy'>
            <h3>
