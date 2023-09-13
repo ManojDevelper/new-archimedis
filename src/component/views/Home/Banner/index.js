@@ -61,6 +61,7 @@ const Banner = () => {
               {/* <Button className="banner-btn">
               Get in Touch <ArrowRightOutlined style={{ marginLeft: "5px" }} />
             </Button> */}
+            <ButtonCompo text="Know More" type="bg-blue-border"/>
         </div>
 
       </div>

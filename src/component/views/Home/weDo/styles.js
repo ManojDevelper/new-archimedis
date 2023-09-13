@@ -44,7 +44,7 @@ export const WeDoStyle = styled.div`
       overflow: hidden;
     }
     .wedo-meta-data{
-      top: 57%;
+      top: 59%;
       bottom: 0;
       left: 0;
       width: 100%;
@@ -172,6 +172,7 @@ export const WeDoStyle = styled.div`
         padding-bottom: 15px;
       }
       .wedo-meta-data {
+        top: 64%;
         background-color: rgba(0, 0, 0, 0.7) !important;
       }
     }

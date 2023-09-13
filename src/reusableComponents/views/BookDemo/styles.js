@@ -48,6 +48,24 @@ export const BookDemoStyle = styled.div`
       background-image: url(${bookDemoBg});
       background-size: 100% 100%;
       background-repeat: no-repeat;
+      .bg-trans-border-white-txt .back_animation {
+        background-color: transparent !important;
+      }
+     
+       .bg-trans-border-white-txt {
+        background-color: transparent !important;
+    }
+    .banner-btn{
+      width: 245px;
+      height: 44px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .demo-btn-container{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
       .book-btn {
         background: #ffffff;
         color: #275cbe;
