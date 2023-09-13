@@ -116,18 +116,19 @@ export const ButtonStyle = styled.div`
 
     ${'' /* bg-trans-border-white-txt (Trans background) */}
     .bg-trans-border-white-txt {
+      background-color: #fff;
       .btn_text {
         color: #fff;
       }
       .back_animation {
-      background-color: transparent;
+      background-color: #275cbe;
       }
     }
 
     .bg-trans-border-white-txt:hover {
       border-color: #fff;
       .btn_text {
-        color: #fff;
+        color: #275cbe;
       }
     }
 `;
