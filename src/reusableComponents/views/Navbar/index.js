@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../../assets/reusableComponents/navbar/archimedisLogo.svg";
-import { DownOutlined, MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import { UpOutlined, DownOutlined, MenuOutlined, CloseOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import { NavbarStyle } from "./styles";
 import { Link } from "react-router-dom";
@@ -10,16 +10,6 @@ import linkedin from "../../../assets/reusableComponents/navbar/nav-linkedin.svg
 import twitter from "../../../assets/reusableComponents/navbar/nav-twitter.svg";
 import youtube from "../../../assets/reusableComponents/navbar/nav-youtube.svg";
 
-import {
-  UserOutlined,
-  SettingOutlined,
-  QuestionCircleOutlined,
-  LogoutOutlined,
-  HomeOutlined,
-  FileTextOutlined,
-  UserAddOutlined,
-  LoginOutlined,
-} from "@ant-design/icons";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); // New state for mobile menu
   const [isActive1, setIsActive1] = useState(false);
@@ -66,46 +56,41 @@ function Navbar() {
               <Link to="/services" className="Link">
                 What we do
               </Link>
-              <DownOutlined onClick={() => toggleDropdown("services")} />
-              {activeDropdown === "services" && (
-                <div className="dropdown-content">
+              <UpOutlined className="UpOutlined"/>
+              <DownOutlined className="DownOutlined"/>
+              <div className="dropdown-content">
                   <ul className="dropdown-content-list">
                     <li>Services</li>
                     <li>Infrastructure</li>
                     <li>Case Studies</li>
                   </ul>
-                </div>
-              )}
+              </div>
             </li>
             <li>
               <Link to="/solutions" className="Link">
                 Who we are
               </Link>
-              <DownOutlined onClick={() => toggleDropdown("solutions")} />
-              {activeDropdown === "solutions" && (
-                <div className="dropdown-content">
+              <DownOutlined/>
+              <div className="dropdown-content">
                   <ul className="dropdown-content-list">
                     <li>Services</li>
                     <li>Infrastructure</li>
                     <li>Case Studies</li>
                   </ul>
-                </div>
-              )}
+              </div>
             </li>
             <li>
               <Link to="/who" className="Link">
                 Why us
               </Link>
-              <DownOutlined onClick={() => toggleDropdown("whyus")} />
-              {activeDropdown === "whyus" && (
-                <div className="dropdown-content">
+              <DownOutlined/>
+              <div className="dropdown-content">
                   <ul className="dropdown-content-list">
                     <li>Services</li>
                     <li>Infrastructure</li>
                     <li>Case Studies</li>
                   </ul>
-                </div>
-              )}
+              </div>
             </li>
           </ul>
           <Button className="contact-button">Contact us</Button>

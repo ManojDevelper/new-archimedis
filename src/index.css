@@ -13,3 +13,13 @@ body {
 code {
   font-family: 'Inter', sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #275CBE; 
+}

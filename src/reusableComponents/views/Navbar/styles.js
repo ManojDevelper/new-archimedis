@@ -17,12 +17,6 @@ export const NavbarStyle = styled.div`
         max-height: 40px;
       }
     }
-    .dropdown-content-list li:hover {
-      cursor: pointer;
-      background: #ebf6fa !important;
-      padding: 16px 0px !important;
-      border-radius: 8px !important;
-    }
 
     .anticon {
       font-size: 14px;
@@ -69,20 +63,29 @@ export const NavbarStyle = styled.div`
     }
     .nav-items-list li {
       position: relative;
+      .UpOutlined {
+        display: none;
+        transition: 0.35s ease-in-out;
+      }
+      .DownOutlined {
+        transition: 0.35s ease-in-out;
+      }
     }
-    .nav-items-list .dropdown-content {
+    .dropdown-content {
       position: absolute;
       background: #ffffff;
-      top: 37px;
+      top: 20px;
       border: 2px solid #275cbe;
       border-radius: 8px;
-      padding: 33px 18px;
+      padding: 25px 10px;
       width: 230px;
+      z-index: 1;
+      transition: 0.35s ease-in-out;
+      display: none;
     }
     .dropdown-content ul {
       display: flex;
       flex-direction: column;
-      gap: 32px;
     }
     .dropdown-content ul li {
       font-family: Inter;
@@ -90,7 +93,16 @@ export const NavbarStyle = styled.div`
       font-weight: 500;
       line-height: 22px;
       letter-spacing: -0.01em;
+      padding: 16px 0px 16px 8px;
+      transition: 0.35s ease-in-out;
+    }
 
+    .dropdown-content-list li:hover {
+      cursor: pointer;
+      color: #275CBE;
+      background: #ebf6fa !important;
+      padding: 16px 0px 16px 8px;
+      border-radius: 8px !important;
     }
  
     .nav-items-list {
@@ -99,6 +111,18 @@ export const NavbarStyle = styled.div`
     .nav-items-list li {
       display: flex;
       align-items: center;
+    }
+    .nav-items-list li:hover {
+      .UpOutlined {
+        display: flex;
+      }
+      .DownOutlined {
+        display: none;
+      }
+      .dropdown-content {
+          display: flex;
+          flex-direction: column;
+      }
     }
   }
 
