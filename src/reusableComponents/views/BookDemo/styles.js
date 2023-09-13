@@ -28,35 +28,12 @@ export const BookDemoStyle = styled.div`
       bottom: -1px;
       left: 0;
     }
-    button {
-      height: auto;
-      border-radius: 8px;
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 24px;
+    .book-demo-container {
+      display: flex;
     }
-    .book-btn {
-      background: #ffffff;
-      color: #275cbe;
-      padding: 16px 40px;
-      height: auto;
-      border: 2px solid #ffffff;
-    }
-    .book-btn:hover {
-      color: #275cbe;
-      border: 2px solid #ffffff;
-    }
-    .contact-btn {
-      background: none;
-      margin-left: 25px;
-      border: 2px solid #ffffff;
-      padding: 16px 74px;
-      font-family: Inter;
-      color: #ffffff;
-    }
-    .contact-btn:hover {
-      border: 2px solid #ffffff;
-      color: #ffffff;
+    .banner-btn {
+      width: 268px !important;
+      margin-right: 20px;
     }
   }
 `;

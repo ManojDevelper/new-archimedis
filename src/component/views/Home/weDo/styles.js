@@ -26,18 +26,60 @@ export const WeDoStyle = styled.div`
     div{
         text-align: center;
     }
+    .ant-card-hoverable {
+      overflow: hidden;
+    }
     .wedo-meta-data{
-      color: #ffffff !important;
-      position: absolute;
+      top: 57%;
       bottom: 0;
       left: 0;
       width: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
       color: white;
-      padding: 10px 0;
+      position: absolute;
+      padding: 25px 0 10px 0;
+      color: #ffffff !important;
+      transition: 0.35s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.7);
+      .ant-card-meta-title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        width: fit-content;
+        margin: auto;
+
+      }
+      .ant-card-meta-title:: after {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 4px;
+        background: #F2D25C;
+        color: #F2D25C;
+        bottom: 0;
+        transition: 0.35s ease-in-out;
+      }
+      .banner-btn {
+        width: 140px;
+        height: 40px;
+        margin: 10px auto auto auto;
+        .btn_text {
+          font-size: 12px;
+        }
+      }
     }
     .ant-card-body{
       padding: 0;
+    }
+    
+    .ant-card-hoverable:hover {
+      .wedo-meta-data{
+        top: 0;
+       }
+       .ant-card-meta-title:: after {
+        width: 100%;
+       }
     }
     .ant-row{
       margin-left: auto !important;

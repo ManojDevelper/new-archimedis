@@ -1,6 +1,7 @@
 import React from "react";
 import { BookDemoStyle } from "./styles";
-import { Button, Col, Row } from "antd";
+import { Col, Row } from "antd";
+import ButtonCompo from "../../../reusableComponents/views/Button";
 import bookDemoImg from '../../../assets/reusableComponents/bookDemo/bookDemoImg.svg';
 
 const BookDemo = () => {
@@ -16,9 +17,9 @@ const BookDemo = () => {
           <Col span={16} style={{padding: '65px 0'}}>
             <h1>Ready to get started?</h1>
             <p>Book a demo or contact us</p>
-            <div>
-              <Button className="book-btn">Book a consultation</Button>
-              <Button className="contact-btn">Contact us</Button>
+            <div className="book-demo-container">
+              <ButtonCompo text="Book a consultation" icon={false}/>
+              <ButtonCompo text="Contact us" type="bg-trans-border-white-txt" icon={false}/>
             </div>
           </Col>
         </Row>

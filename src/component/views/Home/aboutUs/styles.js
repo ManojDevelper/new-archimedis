@@ -38,8 +38,24 @@ export const AboutUsStyle = styled.div`
     .aboutus-main-container {
       position: absolute;
       top: 30px;
+      overflow: hidden;
       img {
         width: 93.6%;
+        transition: transform .2s;
+      }
+      img:hover {
+         transform: scale(1.1);
+      }
+    }
+
+    .aboutus-bottom-img-container {
+      overflow: hidden;
+      img {
+        width: 93.6%;
+        transition: transform .2s;
+      }
+      img:hover {
+         transform: scale(1.1);
       }
     }
 
