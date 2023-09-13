@@ -26,6 +26,12 @@ function Navbar() {
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
   const [isActive4, setIsActive4] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+
+  const toggleDropdown = (dropdownName) => {
+    setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+  };
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -50,19 +56,58 @@ function Navbar() {
           </Link>
         </div>
         <div className="nav-items">
-          <ul>
+          <ul className="nav-items-list">
+            <li>
             <Link to="/" className="Link">
               Home
             </Link>
+            </li>
+            <li>
             <Link to="/services" className="Link">
-              What we do <DownOutlined />
+              What we do 
             </Link>
-            <Link to="/solutions" className="Link">
-              Who we are <DownOutlined />
-            </Link>
-            <Link to="/who" className="Link">
-              Why us <DownOutlined />
-            </Link>
+            <DownOutlined onClick={() => toggleDropdown("services")}/>
+            {activeDropdown === "services" && (
+                <div className="dropdown-content">
+                  <ul className="dropdown-content-list">
+                    <li>Services</li>
+                    <li>Infrastructure</li>
+                    <li>Case Studies</li>
+                  </ul>
+                </div>
+              )}
+            </li>
+            <li>
+              <Link to="/solutions" className="Link">
+                 Who we are 
+              </Link>
+              <DownOutlined onClick={() => toggleDropdown("solutions")} />
+            {activeDropdown === "solutions" && (
+                <div className="dropdown-content">
+                  <ul className="dropdown-content-list">
+                    <li>Services</li>
+                    <li>Infrastructure</li>
+                    <li>Case Studies</li>
+                  </ul>
+                </div>
+              )}
+            </li>
+           <li>
+             <Link to="/who" className="Link">
+                 Why us 
+             </Link>
+             <DownOutlined onClick={() => toggleDropdown("whyus")} />
+            {activeDropdown === "whyus" && (
+                <div className="dropdown-content">
+                  <ul className="dropdown-content-list">
+                    <li>Services</li>
+                    <li>Infrastructure</li>
+                    <li>Case Studies</li>
+                  </ul>
+                </div>
+              )}
+           </li>
+            
           </ul>
           <Button className="contact-button">Contact us</Button>
         </div>

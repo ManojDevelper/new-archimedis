@@ -17,6 +17,12 @@ export const NavbarStyle = styled.div`
         max-height: 40px;
       }
     }
+    .dropdown-content-list li:hover {
+      cursor: pointer;
+      background: #ebf6fa !important;
+      padding: 16px 0px !important;
+      border-radius: 8px !important;
+    }
 
     .anticon {
       font-size: 14px;
@@ -32,7 +38,6 @@ export const NavbarStyle = styled.div`
         margin: 0;
         padding: 0;
         .Link {
-          margin-right: 35px;
           display: flex;
           align-items: center;
           cursor: pointer;
@@ -62,10 +67,43 @@ export const NavbarStyle = styled.div`
         margin-left: 35px;
       }
     }
+    .nav-items-list li {
+      position: relative;
+    }
+    .nav-items-list .dropdown-content {
+      position: absolute;
+      background: #ffffff;
+      top: 37px;
+      border: 2px solid #275cbe;
+      border-radius: 8px;
+      padding: 33px 18px;
+      width: 230px;
+    }
+    .dropdown-content ul {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .dropdown-content ul li {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: -0.01em;
+
+    }
+ 
+    .nav-items-list {
+      gap: 30px;
+    }
+    .nav-items-list li {
+      display: flex;
+      align-items: center;
+    }
   }
 
   @media screen and (max-width: 760px) {
-    .navbar{
+    .navbar {
       padding: 13px 25px 13px 16px;
     }
     #mobile-menu ul {
@@ -133,13 +171,13 @@ export const NavbarStyle = styled.div`
     display: none;
     width: 93.5%;
   }
-  .faq-answer ul li{
-  font-family: Manrope;
-font-size: 14px;
-font-weight: 400;
-line-height: 19px;
-padding-bottom: 20px;
-padding-left: 16px;
+  .faq-answer ul li {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    padding-bottom: 20px;
+    padding-left: 16px;
   }
 
   .faq.active .faq-answer {
@@ -160,15 +198,15 @@ padding-left: 16px;
     align-items: center;
     padding: 15px 8px 15px 16px;
   }
-  .nav-accordion-toggle{
+  .nav-accordion-toggle {
     font-size: 24px;
     opacity: 70%;
   }
-  .nav-media{
+  .nav-media {
     display: flex;
     gap: 30px;
     margin: 32px auto 21px;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     opacity: 80%;
   }
