@@ -8,7 +8,13 @@ export const NavbarStyle = styled.div`
     justify-content: space-between;
     padding: 13px 70px;
     border-bottom: 1px solid gray;
-
+    .banner-btn{
+      margin-left: 35px;
+      width: 136px;
+      height: 40px;
+      font-size: 16px;
+      font-weight: 600;
+    }
     .logo {
       flex: 1;
       display: flex;
@@ -127,6 +133,7 @@ export const NavbarStyle = styled.div`
   }
 
   @media screen and (max-width: 760px) {
+    
     .navbar {
       padding: 13px 25px 13px 16px;
     }
@@ -230,12 +237,10 @@ export const NavbarStyle = styled.div`
     display: block;
    
   }
-  .banner-btn{
-    background-color: #0052FE;
+  .nav-mobile-menu .banner-btn {
     margin-top: 60px;
     width: 358px;
   }
-  .bg-blue-border {
-    border: 1px solid #0052FE;
-  }
+}
+
 `;
