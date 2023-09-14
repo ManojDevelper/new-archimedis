@@ -94,7 +94,8 @@ function Navbar() {
               </div>
             </li>
           </ul>
-          <Button className="contact-button">Contact us</Button>
+          {/* <Button className="contact-button">Contact us</Button> */}
+          <ButtonCompo text="contact us" type="bg-blue-border" icon={false}/>
         </div>
 
         <div id="mobile">
@@ -110,7 +111,7 @@ function Navbar() {
 
       {menuOpen && (
         <>
-          <div id="mobile-menu">
+          <div id="mobile-menu" className="nav-mobile-menu">
             <ul>
               <div className={`faq ${isActive1 ? "active" : ""}`}>
                 <button className="nav-accordion" onClick={handleClick1}>
@@ -190,7 +191,8 @@ function Navbar() {
               </div>
             </ul>
             <div className="nav-media">
-                <ButtonCompo text="Book a Demo" type="bg-blue-border"/>
+                <ButtonCompo text="Book a Demo" type="bg-blue-border" />
+            
             </div>
           </div>
         </>
