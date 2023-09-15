@@ -42,7 +42,6 @@ export const AboutUsStyle = styled.div`
       position: relative;
       img {
         width: 93.6%;
-       
       }
     }
     .aboutus-main-container {
@@ -51,10 +50,10 @@ export const AboutUsStyle = styled.div`
       overflow: hidden;
       img {
         width: 93.6%;
-        transition: transform .2s;
+        transition: transform 0.2s;
       }
       img:hover {
-         transform: scale(1.1);
+        transform: scale(1.1);
       }
     }
 
@@ -62,10 +61,46 @@ export const AboutUsStyle = styled.div`
       overflow: hidden;
       img {
         width: 93.6%;
-        transition: transform .2s;
+        transition: transform 0.2s;
       }
       img:hover {
-         transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+    .aboutus-bottom-advantages-content {
+      position: relative;
+      background-color: #ffffff;
+      padding: 40px 40px 8px;
+      text-align: center;
+      border-radius: 16px;
+      margin-right: 86px;
+      h2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0.4px;
+        margin: 0;
+        padding: 18px 0;
+      }
+      .adv-description {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 34px;
+        margin: 0;
+        padding: 18px 60px 32px;
+        margin-top: 8px;
+      }
+      .adv-text {
+        padding: 0 36px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+      .close-btn{
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        cursor: pointer;
       }
     }
 
@@ -102,13 +137,16 @@ export const AboutUsStyle = styled.div`
       margin-top: 10px;
       color: #212121;
     }
-    .aboutus-bottom-casestudy{
+    .aboutus-bottom-casestudy {
       padding: 25px 0 25px 67px;
+    }
+    .aboutus-bottom-advantage {
+      padding-right: 88px;
     }
   }
   @media (max-width: 768px) {
-      .about-us {
-        margin-bottom: 0;
+    .about-us {
+      margin-bottom: 0;
     }
     .aboutus-top {
       display: none;
@@ -119,7 +157,7 @@ export const AboutUsStyle = styled.div`
 
     .aboutus-top-mob {
       margin-top: 50px;
-      display: block;  
+      display: block;
       padding: 0 10px;
       h1 {
         font-family: IBM Plex Sans;
@@ -130,11 +168,11 @@ export const AboutUsStyle = styled.div`
         text-align: center;
         color: #0f1629;
       }
-      .banner-btn{
-      width: 182px;
-      height: 52px;
-      margin-left: auto;
-      margin-right: auto;
+      .banner-btn {
+        width: 182px;
+        height: 52px;
+        margin-left: auto;
+        margin-right: auto;
       }
       .aboutus-bg-container-img {
         margin-left: 15px;
@@ -190,12 +228,12 @@ export const AboutUsStyle = styled.div`
         text-align: center;
         color: #0f1629;
       }
-      .banner-btn{
+      .banner-btn {
         width: 182px;
         height: 52px;
         margin-left: auto;
         margin-right: auto;
-        }
+      }
       .aboutus-text {
         font-family: IBM Plex Sans;
         font-size: 16px;
@@ -215,10 +253,48 @@ export const AboutUsStyle = styled.div`
         margin-right: auto;
         display: block;
       }
+      .aboutus-bottom-advantages-content{
+        border-radius: 8px;
+        padding: 40px 21px 8px;
+        margin-top: 50px;
+        .ant-col-8{
+      display: block;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-top: 22px;
+      }
+      .ant-col-12{
+        display: block;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 22px;
+        }
+        .adv-text{
+          padding: 0;
+        }
+      .adv-description {
+          font-size: 16px;
+          line-height: 28px;
+          margin: 0;
+          margin-top: 0px;
+          padding: 0 0 10px;
+      }
+     h2 {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 0px 0 10px;
+    }
+    .close-btn {
+      top: 12px;
+      right: 12px;
+      width: 29px;
+  }
+    }
       .aboutus-bottom-mob-casestudy {
         margin-top: 50px;
         background: #ffffff;
         padding: 5px 20px 8px 20px;
+        margin-bottom: 40px;
         h3 {
           font-family: IBM Plex Sans;
           font-size: 16px;
