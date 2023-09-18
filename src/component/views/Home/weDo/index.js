@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { WeDoStyle } from "./styles";
 import { Card, Col, Row } from "antd";
 import wedoImg1 from "../../../../../src/assets/home/weDo/wedo-img1.png";
 import wedoImg2 from "../../../../../src/assets/home/weDo/wedo-img2.png";
 import wedoImg3 from "../../../../../src/assets/home/weDo/wedo-img3.png";
 import ButtonCompo from "../../../../reusableComponents/views/Button";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const { Meta } = Card;
 const WeDo = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true
+    });
+    AOS.refresh();
+  }, []);
   return (
     <WeDoStyle>
       <div className="weDo">
@@ -16,7 +24,7 @@ const WeDo = () => {
           We help life science clients with digital products and services
         </p>
         <Row gutter={35}>
-          <Col span={8} className="weDo-card1">
+          <Col span={8} className="weDo-card1" data-aos="fade-down" data-aos-duration="1500">
             <Card
               bordered={false}
               hoverable
@@ -40,11 +48,11 @@ const WeDo = () => {
                   title="Products"
                   description="Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users."
                 />
-                <ButtonCompo type="bg-trans" text="Know More"/>
+                <ButtonCompo type="bg-trans" text="Know More" />
               </div>
             </Card>
           </Col>
-          <Col span={8} className="weDo-card2">
+          <Col span={8} className="weDo-card2" data-aos="fade-down" data-aos-duration="2000">
             <Card
               hoverable
               style={{
@@ -67,11 +75,11 @@ const WeDo = () => {
                   title="Solutions"
                   description="Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users."
                 />
-                <ButtonCompo type="bg-trans" text="Know More"/>
+                <ButtonCompo type="bg-trans" text="Know More" />
               </div>
             </Card>
           </Col>
-          <Col span={8} className="weDo-card3">
+          <Col span={8} className="weDo-card3" data-aos="fade-down" data-aos-duration="2400">
             <Card
               bordered={false}
               hoverable
@@ -95,7 +103,7 @@ const WeDo = () => {
                   title="Services"
                   description="Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users."
                 />
-                <ButtonCompo type="bg-trans" text="Know More"/>
+                <ButtonCompo type="bg-trans" text="Know More" />
               </div>
             </Card>
           </Col>

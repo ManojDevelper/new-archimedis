@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import logo from "../../../assets/reusableComponents/navbar/archimedisLogo.svg";
 import { UpOutlined, DownOutlined, MenuOutlined, CloseOutlined } from "@ant-design/icons";
-import { Button } from "antd";
+// import { Button } from "antd";
 import { NavbarStyle } from "./styles";
 import { Link } from "react-router-dom";
 import ButtonCompo from "../../../reusableComponents/views/Button";
-import instagram from "../../../assets/reusableComponents/navbar/nav-insta.svg";
-import facebook from "../../../assets/reusableComponents/navbar/nav-fb.svg";
-import linkedin from "../../../assets/reusableComponents/navbar/nav-linkedin.svg";
-import twitter from "../../../assets/reusableComponents/navbar/nav-twitter.svg";
-import youtube from "../../../assets/reusableComponents/navbar/nav-youtube.svg";
+// import instagram from "../../../assets/reusableComponents/navbar/nav-insta.svg";
+// import facebook from "../../../assets/reusableComponents/navbar/nav-fb.svg";
+// import linkedin from "../../../assets/reusableComponents/navbar/nav-linkedin.svg";
+// import twitter from "../../../assets/reusableComponents/navbar/nav-twitter.svg";
+// import youtube from "../../../assets/reusableComponents/navbar/nav-youtube.svg";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); // New state for mobile menu

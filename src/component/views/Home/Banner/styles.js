@@ -65,6 +65,12 @@ export const BannerStyle = styled.div`
     .banner-links img {
       width: 24px;
       height: 24px;
+      cursor: pointer;
+      transition: 0.35s ease-in-out;
+    }
+    
+    .banner-links img:hover {
+       transform: scale(1.2);
     }
   }
   @media (max-width: 768px) {

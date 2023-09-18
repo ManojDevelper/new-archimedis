@@ -63,6 +63,11 @@ export const FooterStyle = styled.div`
       line-height: 32px;
       opacity: 80%;
       color: #ffffff;
+      cursor: pointer;
+      transition: 0.35s ease-in-out;
+    }
+    ul li:hover {
+      text-decoration: underline;
     }
     ul {
       padding: 0;
@@ -81,6 +86,10 @@ export const FooterStyle = styled.div`
       img {
         width: 20px;
         height: 20px;
+        transition: 0.35s ease-in-out;
+      }
+      img:hover {
+        transform: scale(1.2);
       }
       div {
         display: flex;

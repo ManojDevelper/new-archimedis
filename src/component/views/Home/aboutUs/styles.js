@@ -33,8 +33,17 @@ export const AboutUsStyle = styled.div`
     }
     .aboutus-bottom {
       background-color: #ebf6fa;
-      margin-top: 20px;
+      width: 100%;
     }
+
+    .aboutus-bottom-casestudy {
+      transition: 0.35s ease-in-out;
+    }
+
+    .aboutus-bottom-whyus {
+      transition: 0.35s ease-in-out;
+    }
+
     .aboutus-bg-container-img {
       margin-left: 35px;
     }
@@ -88,7 +97,6 @@ export const AboutUsStyle = styled.div`
         line-height: 34px;
         margin: 0;
         padding: 18px 60px 32px;
-        margin-top: 8px;
       }
       .adv-text {
         padding: 0 36px;
@@ -101,6 +109,17 @@ export const AboutUsStyle = styled.div`
         top: 18px;
         right: 18px;
         cursor: pointer;
+        transition: 0.35s ease-in-out;
+      }
+      .close-btn:hover {
+        transform: scale(1.1);
+      }
+      .row_img {
+        cursor: pointer;
+        transition: 0.35s ease-in-out;
+      }
+      .row_img:hover {
+        transform: scale(1.2);
       }
     }
 

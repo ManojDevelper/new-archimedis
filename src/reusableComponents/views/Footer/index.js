@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FooterStyle } from "./styles";
 import { Col, Row } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
@@ -9,12 +9,21 @@ import facebook from "../../../assets/reusableComponents/footer/footer-facebook.
 import linkedin from "../../../assets/reusableComponents/footer/footer-linkedin.png";
 import twitter from "../../../assets/reusableComponents/footer/footer-twitter.png";
 import youtube from "../../../assets/reusableComponents/footer/footer-youtube.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 function Footer() {
+  useEffect(() => {
+    AOS.init({
+      once: true
+    });
+    AOS.refresh();
+  }, []);
   return (
     <FooterStyle>
       <div className="footer">
         <Row>
-          <Col className="gutter-row" span={8}>
+          <Col className="gutter-row" span={8} data-aos="fade-down" data-aos-duration="1500">
             <div>
               <h2>Archimedis </h2>
               <p className="footer-description">
@@ -62,9 +71,9 @@ function Footer() {
               </div>
             </div>
           </Col>
-          <Col className="gutter-row home-row"  span={7}>
+          <Col className="gutter-row home-row" span={7} data-aos="fade-down" data-aos-duration="1500">
             <div>
-              <div>
+              <div data-aos="fade-down" data-aos-duration="1500">
                 <h3>Home</h3>
                 <ul>
                   <li>Lorem ipsum dolor</li>
@@ -72,7 +81,7 @@ function Footer() {
                   <li>Lorem ipsum dolor cet</li>
                 </ul>
               </div>
-              <div className="whatwedo-content">
+              <div className="whatwedo-content" data-aos="fade-down" data-aos-duration="1700">
                 <h3>What we do</h3>
                 <ul>
                   <li>Lorem ipsum dolor</li>
@@ -84,7 +93,7 @@ function Footer() {
             </div>
           </Col>
           <Col className="gutter-row whoweare-row" span={5}>
-            <div>
+            <div data-aos="fade-down" data-aos-duration="2000">
               <div>
                 <h3>Who we are</h3>
                 <ul>
@@ -104,7 +113,7 @@ function Footer() {
             </div>
           </Col>
           <Col className="gutter-row contact-row" span={4}>
-            <div>
+            <div data-aos="fade-down" data-aos-duration="2400">
               <h3>Contact</h3>
               <ul>
                 <li>Contact us</li>

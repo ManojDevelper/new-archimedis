@@ -3,7 +3,7 @@ import { ButtonStyle } from "./styles";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
 const ButtonCompo = (props) => {
-  const { type, text, icon=true } = props;
+  const { type, text, icon=true, onClickHandle=() => {}, aos } = props;
 
   // type
   // bg-white (DEF)
@@ -13,7 +13,7 @@ const ButtonCompo = (props) => {
   // bg-blue-border-black-txt (background white, border blue, Hover border white)
   return (
     <ButtonStyle>
-      <div className={`${type} banner-btn`}>
+      <div className={`${type} banner-btn`} onClick={onClickHandle} {...aos}>
         <div className="back_animation" />
         <span className="btn_text">
           {text}{" "}{icon && <ArrowRightOutlined style={{ marginLeft: "5px" }} />}
