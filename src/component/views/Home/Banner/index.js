@@ -42,20 +42,20 @@ const Banner = () => {
             </div>
           </Col>
           <Col span={12}>
-            <div className="banner-links" data-aos="fade-up">
-              <a href="#">
+            <div className="banner-links">
+              <a href="#" data-aos="fade-left" data-aos-duration="1000">
                 <img src={facebook} alt="Facebook" />
               </a>
-              <a href="#">
+              <a href="#" data-aos="fade-left" data-aos-duration="1200">
                 <img src={instagram} alt="Instagram" />
               </a>
-              <a href="#">
+              <a href="#" data-aos="fade-left" data-aos-duration="1400">
                 <img src={twitter} alt="Twitter" />
               </a>
-              <a href="#">
+              <a href="#" data-aos="fade-left" data-aos-duration="1600">
                 <img src={linkedin} alt="LinkedIn" />
               </a>
-              <a href="#">
+              <a href="#" data-aos="fade-left" data-aos-duration="1800">
                 <img src={youtube} alt="YouTube" />
               </a>
             </div>

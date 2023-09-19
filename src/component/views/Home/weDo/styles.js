@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import * as palette from "../../../../styles/variables";
 
 export const WeDoStyle = styled.div`
   .weDo {
@@ -43,17 +42,20 @@ export const WeDoStyle = styled.div`
     .ant-card-hoverable {
       overflow: hidden;
     }
-    .wedo-meta-data{
-      top: 56%;
+    .wedo-meta-data {
+      top: 65%;
       bottom: 0;
       left: 0;
       width: 100%;
+      min-height: 95px;
+      overflow: hidden;
       color: white;
       position: absolute;
       padding: 25px 0 10px 0;
       color: #ffffff !important;
       transition: 0.35s ease-in-out;
       background-color: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(5px);
       .ant-card-meta-title {
         position: relative;
         display: flex;
@@ -62,15 +64,14 @@ export const WeDoStyle = styled.div`
         padding-bottom: 10px;
         width: fit-content;
         margin: auto;
-
       }
       .ant-card-meta-title:: after {
         position: absolute;
-        content: '';
+        content: "";
         width: 60px;
         height: 4px;
-        background: #F2D25C;
-        color: #F2D25C;
+        background: #f2d25c;
+        color: #f2d25c;
         bottom: 0;
         transition: 0.35s ease-in-out;
       }
@@ -86,16 +87,17 @@ export const WeDoStyle = styled.div`
     .ant-card-body {
       padding: 0;
     }
-    
+
     .ant-card-hoverable:hover {
-      .wedo-meta-data{
+      .wedo-meta-data {
         top: 0;
-       }
-       .ant-card-meta-title:: after {
+        height: 100%;
+      }
+      .ant-card-meta-title:: after {
         width: 100%;
-       }
+      }
     }
-    .ant-row{
+    .ant-row {
       margin-left: auto !important;
       margin-right: auto !important;
       width: 78%;
@@ -123,17 +125,18 @@ export const WeDoStyle = styled.div`
       }
       .ant-card-meta-title {
         font-family: IBM Plex Sans;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 600;
         line-height: 29px;
       }
       .ant-card-meta-description {
         font-family: IBM Plex Sans;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 400;
-        line-height: 21px;
+        line-height: inherit;
         padding: 0px 30px 9px;
         opacity: 80%;
+        margin-top: 15px;
       }
 
       h1 {
@@ -153,7 +156,8 @@ export const WeDoStyle = styled.div`
         text-align: center;
         padding: 8px 0 29px;
       }
-      ${'' /* .weDo-card3 {
+      ${
+        "" /* .weDo-card3 {
         display: none;
       }
       .weDo-card2 {
@@ -161,7 +165,8 @@ export const WeDoStyle = styled.div`
       }
       .wedo-meta-data {
         position: relative !important;
-      } */}
+      } */
+      }
       .ant-row {
         width: 100%;
       }
@@ -172,8 +177,12 @@ export const WeDoStyle = styled.div`
         padding-bottom: 15px;
       }
       .wedo-meta-data {
-        top: 64%;
+        top: 68%;
+        padding-top: 32px;
         background-color: rgba(0, 0, 0, 0.7) !important;
+        .banner-btn {
+          margin: 27px auto auto auto;
+        }
       }
     }
   }

@@ -125,19 +125,19 @@ function Footer() {
         </Row>
         <div className="footer-copyright">
           <div>
-            <a href="#">
+            <a href="#" data-aos="fade-down" data-aos-duration="1000">
               <img src={instagram} alt="Instagram" />
             </a>
-            <a href="#">
+            <a href="#" data-aos="fade-down" data-aos-duration="1200">
               <img src={facebook} alt="Facebook" />
             </a>
-            <a href="#">
+            <a href="#" data-aos="fade-down" data-aos-duration="1400">
               <img src={twitter} alt="Twitter" />
             </a>
-            <a href="#">
+            <a href="#" data-aos="fade-down" data-aos-duration="1600">
               <img src={youtube} alt="YouTube" />
             </a>
-            <a href="#">
+            <a href="#" data-aos="fade-down" data-aos-duration="1800">
               <img src={linkedin} alt="LinkedIn" />
             </a>
           </div>

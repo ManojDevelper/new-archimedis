@@ -177,7 +177,7 @@ export const AboutUsStyle = styled.div`
     .aboutus-top-mob {
       margin-top: 50px;
       display: block;
-      padding: 0 10px;
+      padding: 0 10px 40px 10px;
       h1 {
         font-family: IBM Plex Sans;
         font-size: 24px;

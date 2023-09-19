@@ -9,7 +9,6 @@ import 'aos/dist/aos.css';
 const BookDemo = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1500,
       once: true
     });
     AOS.refresh();
@@ -24,14 +23,14 @@ const BookDemo = () => {
             {/* <img src={bookDemoImg} alt="bookDemoImg" /> */}
           </Col>
           <Col span={12} className="book-demo-right">
-            <h1 data-aos="fade-up"
+            <h1 data-aos="fade-down"
               data-aos-anchor-placement="center-bottom">Ready to get started?</h1>
-            <p data-aos="fade-up" data-aos-duration="1600"
+            <p data-aos="fade-down" data-aos-duration="1600"
               data-aos-anchor-placement="center-bottom">Book a demo or contact us</p>
             <div className="book-demo-container">
               <ButtonCompo text="Book a consultation" type="bg-blue-border" icon={false}
                 aos={{
-                  "data-aos": "fade-right",
+                  "data-aos": "fade-down",
                   "data-aos-duration": "2000"
                 }}
               />
@@ -40,7 +39,7 @@ const BookDemo = () => {
                 type="bg-trans-border-white-txt"
                 icon={false}
                 aos={{
-                  "data-aos": "fade-left",
+                  "data-aos": "fade-down",
                   "data-aos-duration": "2000"
                 }}
               />

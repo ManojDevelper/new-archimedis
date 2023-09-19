@@ -20,7 +20,7 @@ export const NavbarStyle = styled.div`
       display: flex;
       align-items: center;
       img {
-        max-height: 40px;
+        max-height: 60px;
       }
     }
 
@@ -85,7 +85,7 @@ export const NavbarStyle = styled.div`
       border-radius: 8px;
       padding: 25px 10px;
       width: 230px;
-      z-index: 1;
+      z-index: 3;
       transition: 0.35s ease-in-out;
       display: none;
     }
@@ -229,18 +229,12 @@ export const NavbarStyle = styled.div`
     align-items: center;
     padding: 15px 8px 15px 16px;
   }
-  // .nav-accordion-toggle {
-  //   font-size: 24px;
-  //   opacity: 70%;
-  // }
+
   .nav-media {
     display: block;
-   
   }
   .nav-mobile-menu .banner-btn {
-    margin-top: 60px;
-    width: 358px;
+    margin-top: 85px;
+    width: 95%;
   }
-}
-
 `;

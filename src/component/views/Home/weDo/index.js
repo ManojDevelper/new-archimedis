@@ -19,8 +19,8 @@ const WeDo = () => {
   return (
     <WeDoStyle>
       <div className="weDo">
-        <h1>What we do?</h1>
-        <p className="weDo-text">
+        <h1 data-aos="fade-down" data-aos-duration="1000">What we do?</h1>
+        <p className="weDo-text" data-aos="fade-down" data-aos-duration="1500">
           We help life science clients with digital products and services
         </p>
         <Row gutter={35}>

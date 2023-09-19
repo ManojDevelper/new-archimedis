@@ -7,8 +7,10 @@ export const BookDemoStyle = styled.div`
     display: none;
   }
   .book-demo {
-    ${'' /* text-align: center;
-    padding-bottom: 50px; */}
+    ${
+      "" /* text-align: center;
+    padding-bottom: 50px; */
+    }
     background-color: #02060C;
     position: relative;
     h1 {
@@ -26,7 +28,7 @@ export const BookDemoStyle = styled.div`
       font-weight: 450;
       line-height: 32px;
     }
-    .bookdemo-img-container{
+    .bookdemo-img-container {
       background-image: url(${bookDemoImg});
       background-size: cover;
       background-repeat: no-repeat;
@@ -46,21 +48,21 @@ export const BookDemoStyle = styled.div`
     .bg-trans-border-white-txt .back_animation {
       background-color: transparent !important;
     }
-   
-     .bg-trans-border-white-txt {
+
+    .bg-trans-border-white-txt {
       background-color: transparent !important;
-  }
+    }
     .banner-btn {
       width: 268px !important;
       margin-right: 20px;
     }
-    .book-demo-right{
+    .book-demo-right {
       text-align: center;
       margin-top: auto;
       margin-bottom: auto;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     .book-demo {
       display: none;
     }
@@ -72,21 +74,21 @@ export const BookDemoStyle = styled.div`
       .bg-trans-border-white-txt .back_animation {
         background-color: transparent !important;
       }
-     
-       .bg-trans-border-white-txt {
+
+      .bg-trans-border-white-txt {
         background-color: transparent !important;
-    }
-    .banner-btn{
-      width: 245px;
-      height: 44px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .demo-btn-container{
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+      }
+      .banner-btn {
+        width: 245px;
+        height: 44px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .demo-btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
       .book-btn {
         background: #ffffff;
         color: #275cbe;
@@ -130,7 +132,6 @@ export const BookDemoStyle = styled.div`
         line-height: 23px;
         color: #ffffff;
         margin: 8px 0 35px;
-
       }
     }
   }
