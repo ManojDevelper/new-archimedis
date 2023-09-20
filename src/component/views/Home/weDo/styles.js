@@ -43,7 +43,7 @@ export const WeDoStyle = styled.div`
       overflow: hidden;
     }
     .wedo-meta-data {
-      top: 65%;
+      top: 60%;
       bottom: 0;
       left: 0;
       width: 100%;
@@ -56,6 +56,9 @@ export const WeDoStyle = styled.div`
       transition: 0.35s ease-in-out;
       background-color: rgba(0, 0, 0, 0.7);
       backdrop-filter: blur(5px);
+      .actual_span_hover {
+        display: none;
+      }
       .ant-card-meta-title {
         position: relative;
         display: flex;
@@ -76,6 +79,7 @@ export const WeDoStyle = styled.div`
         transition: 0.35s ease-in-out;
       }
       .banner-btn {
+        display: none;
         width: 140px;
         height: 40px;
         margin: 10px auto auto auto;
@@ -92,6 +96,15 @@ export const WeDoStyle = styled.div`
       .wedo-meta-data {
         top: 0;
         height: 100%;
+      }
+      .banner-btn {
+        display: flex;
+      }
+      .actual_span {
+        display: none;
+      }
+      .actual_span_hover {
+        display: inherit;
       }
       .ant-card-meta-title:: after {
         width: 100%;
@@ -130,7 +143,6 @@ export const WeDoStyle = styled.div`
         line-height: 29px;
       }
       .ant-card-meta-description {
-        font-family: IBM Plex Sans;
         font-size: 18px;
         font-weight: 400;
         line-height: inherit;
@@ -140,7 +152,6 @@ export const WeDoStyle = styled.div`
       }
 
       h1 {
-        font-family: IBM Plex Sans;
         font-size: 24px;
         font-weight: 700;
         line-height: 31px;
@@ -149,7 +160,6 @@ export const WeDoStyle = styled.div`
         padding-top: 42px;
       }
       .weDo-text {
-        font-family: IBM Plex Sans;
         font-size: 16px;
         font-weight: 500;
         line-height: 26px;
@@ -182,6 +192,34 @@ export const WeDoStyle = styled.div`
         background-color: rgba(0, 0, 0, 0.7) !important;
         .banner-btn {
           margin: 27px auto auto auto;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 455px) {
+    .weDo {
+      .weDo-content {
+        padding: 0 10px;
+      }
+      .ant-card-meta-title {
+        font-size: 15px;
+      }
+      .wedo-meta-data {
+        padding: 10px 0;
+        .ant-card-meta-title:: after {
+          bottom: 8px;
+        }
+      }
+      .ant-card-meta-description {
+        font-size: 14px;
+        margin: 0;
+      }
+
+      .ant-card-hoverable {
+        .banner-btn {
+          width: 39%;
+          font-size: 55%;
         }
       }
     }

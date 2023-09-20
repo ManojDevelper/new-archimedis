@@ -46,7 +46,8 @@ const WeDo = () => {
               <div className="wedo-meta-data">
                 <Meta
                   title="Products"
-                  description="Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users."
+                  description={<><span className="actual_span">Customized digital tools exclusively designed for life science users. Customized</span>
+                    <span className="actual_span_hover">Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users.</span></>}
                 />
                 <ButtonCompo type="bg-trans" text="Know More" />
               </div>
@@ -73,7 +74,8 @@ const WeDo = () => {
               <div className="wedo-meta-data">
                 <Meta
                   title="Solutions"
-                  description="Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users."
+                  description={<><span className="actual_span">Customized digital tools exclusively designed for life science users. Customized</span>
+                    <span className="actual_span_hover">Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users.</span></>}
                 />
                 <ButtonCompo type="bg-trans" text="Know More" />
               </div>
@@ -101,8 +103,8 @@ const WeDo = () => {
               <div className="wedo-meta-data">
                 <Meta
                   title="Services"
-                  description="Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users."
-                />
+                  description={<><span className="actual_span">Customized digital tools exclusively designed for life science users. Customized</span>
+                    <span className="actual_span_hover">Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users.</span></>} />
                 <ButtonCompo type="bg-trans" text="Know More" />
               </div>
             </Card>
