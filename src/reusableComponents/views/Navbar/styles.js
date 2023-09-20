@@ -47,6 +47,7 @@ export const NavbarStyle = styled.div`
           line-height: 19px;
           letter-spacing: -0.01em;
           color: #0f1629;
+          text-decoration: none;
         }
         .Link:last-child {
           margin-right: 0;
