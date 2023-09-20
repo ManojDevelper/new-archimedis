@@ -117,14 +117,14 @@ export const WeDoStyle = styled.div`
     }
     .ant-card-meta-title {
       color: #ffffff;
-      font-size: 24px;
+      font-size: 1.5vw;
       font-weight: 600;
       line-height: 32px;
     }
     .ant-card-meta-description {
-      font-size: 18px;
+      font-size: 1.2vw;
       font-weight: 400;
-      line-height: 28px;
+      line-height: auto;
       color: #ffffff;
       padding: 9px 5px;
     }

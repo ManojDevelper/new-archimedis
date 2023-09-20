@@ -6,7 +6,7 @@ export const NavbarStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 13px 70px;
+    padding: 5px 70px 0 70px;
     border-bottom: 1px solid gray;
     .banner-btn{
       margin-left: 35px;
@@ -20,7 +20,7 @@ export const NavbarStyle = styled.div`
       display: flex;
       align-items: center;
       img {
-        max-height: 60px;
+        max-height: 80px;
       }
     }
 
