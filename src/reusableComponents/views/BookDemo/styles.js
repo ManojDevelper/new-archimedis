@@ -45,12 +45,15 @@ export const BookDemoStyle = styled.div`
       display: flex;
       justify-content: center;
     }
+    .bg-blue-border {
+      background-color: white !important;
+    }
     .bg-trans-border-white-txt .back_animation {
-      background-color: transparent !important;
+      background-color: black !important;
     }
 
     .bg-trans-border-white-txt {
-      background-color: transparent !important;
+      background-color: white !important;
     }
     .banner-btn {
       width: 268px !important;

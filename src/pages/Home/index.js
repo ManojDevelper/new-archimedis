@@ -14,7 +14,7 @@ const HomeMain = () => {
       <Banner />
       <WeDo />
       <AboutUs />
-      <WhyUs/>
+      <WhyUs />
       <BookDemo />
       <Footer />
     </Fragment>
