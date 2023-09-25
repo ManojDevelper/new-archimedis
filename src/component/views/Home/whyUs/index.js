@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { WhyUsStyle } from './styles'
 import { Col, Row, Carousel } from "antd";
-import aboutus1 from '../../../../assets/home/aboutUs/aboutus-1.png';
-import aboutus2 from '../../../../assets/home/aboutUs/aboutus-2.png';
 import aboutusBot from '../../../../assets/home/aboutUs/aboutus-bottom.png';
 import ButtonCompo from "../../../../reusableComponents/views/Button";
 import aboutAdv1 from '../../../../assets/home/aboutUs/aboutAdv1.svg';

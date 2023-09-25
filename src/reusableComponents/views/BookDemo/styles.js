@@ -2,6 +2,12 @@ import styled from "styled-components";
 // import * as palette from "../../../styles/variables";
 import bookDemoBg from "../../../../src/assets/reusableComponents/bookDemo/bookDemoMob.svg";
 import bookDemoImg from "../../../../src/assets/reusableComponents/bookDemo/bookDemoImg2.png";
+import {
+  pixFun,
+  MobPixFun,
+  RF,
+} from "../../../reusableComponents/Function/functions";
+
 export const BookDemoStyle = styled.div`
   .book-demo-mob {
     display: none;
@@ -9,36 +15,36 @@ export const BookDemoStyle = styled.div`
   .book-demo {
     ${
       "" /* text-align: center;
-    padding-bottom: 50px; */
+    padding-bottom: 50px")}; */
     }
     background-color: #02060C;
     position: relative;
     h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: ${RF("36px")};
       font-weight: 700;
-      line-height: 48px;
+      line-height: ${RF("48px")};
       color: #fff;
     }
     p {
       margin: 0;
-      padding: 15px 0 28px;
+      padding: ${RF("15px")} 0 ${RF("28px")};
       color: #f2f2f2;
-      font-size: 20px;
+      font-size: ${RF("20px")};
       font-weight: 450;
-      line-height: 32px;
+      line-height: ${RF("32px")};
     }
     .bookdemo-img-container {
       background-image: url(${bookDemoImg});
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-      height: 400px;
+      height: ${RF("400px")};
     }
     img {
       width: 73%;
       position: absolute;
-      bottom: -1px;
+      bottom: ${RF("-1px")};
       left: 0;
     }
     .book-demo-container {
@@ -56,8 +62,8 @@ export const BookDemoStyle = styled.div`
       background-color: white !important;
     }
     .banner-btn {
-      width: 268px !important;
-      margin-right: 20px;
+      width: ${RF("268px")} !important;
+      margin-right: ${RF("20px")};
     }
     .book-demo-right {
       text-align: center;
@@ -82,26 +88,26 @@ export const BookDemoStyle = styled.div`
         background-color: transparent !important;
       }
       .banner-btn {
-        width: 245px;
-        height: 44px;
+        width: ${RF("245px")};
+        height: ${RF("44px")};
         margin-left: auto;
         margin-right: auto;
       }
       .demo-btn-container {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: ${RF("15px")};
       }
       .book-btn {
         background: #ffffff;
         color: #275cbe;
-        padding: 10px 40px;
+        padding: ${RF("10px")} ${RF("40px")};
         height: auto;
-        border: 2px solid #275cbe;
+        border: ${RF("2px")} solid #275cbe;
         font-family: IBM Plex Sans;
-        font-size: 16px;
+        font-size: ${RF("16px")};
         font-weight: 600;
-        line-height: 21px;
+        line-height: ${RF("21px")};
         text-align: center;
         color: #ffffff;
         background: #275cbe;
@@ -109,32 +115,32 @@ export const BookDemoStyle = styled.div`
       .contact-btn {
         background: none;
         height: auto;
-        border: 2px solid #ffffff;
-        padding: 10px 73px;
+        border: ${RF("2px")} solid #ffffff;
+        padding: ${RF("10px")} ${RF("73px")};
         color: #ffffff;
         font-family: IBM Plex Sans;
-        font-size: 16px;
+        font-size: ${RF("16px")};
         font-weight: 600;
-        line-height: 21px;
+        line-height: ${RF("21px")};
         text-align: center;
-        margin-top: 18px;
+        margin-top: ${RF("18px")};
       }
       h1 {
         font-family: IBM Plex Sans;
-        font-size: 24px;
+        font-size: ${RF("24px")};
         font-weight: 700;
-        line-height: 31px;
-        letter-spacing: 0.4px;
+        line-height: ${RF("31px")};
+        letter-spacing: ${RF("0.4px")};
         color: #ffffff;
         margin: 0;
       }
       p {
         font-family: IBM Plex Sans;
-        font-size: 16px;
+        font-size: ${RF("16px")};
         font-weight: 400;
-        line-height: 23px;
+        line-height: ${RF("23px")};
         color: #ffffff;
-        margin: 8px 0 35px;
+        margin: ${RF("8px")} 0 ${RF("35px")};
       }
     }
   }

@@ -1,227 +1,141 @@
 import styled from "styled-components";
+import {
+  RF,
+  MRF
+} from "../../../../reusableComponents/Function/functions";
 
 export const WeDoStyle = styled.div`
   .weDo {
+    padding:${RF("50px")} ${RF("100px")} ${RF("100px")} ${RF("100px")};
     text-align: center;
-    background: linear-gradient(
-        328.66deg,
-        rgba(65, 157, 241, 0.1) 33.24%,
-        rgba(45, 143, 234, 0) 75.53%
-      ),
-      radial-gradient(
-          50% 50% at 50% 50%,
-          rgba(186, 38, 255, 0.02) 0%,
-          rgba(162, 89, 255, 0) 100%
-        )
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-      radial-gradient(
-          29.56% 59.96% at 50% 50%,
-          rgba(213, 189, 245, 0.3) 0%,
-          rgba(250, 247, 254, 0) 100%
-        )
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    padding-bottom: 78px;
-    h1 {
+    background: #ebf6fa;
+    .wedo_title {
       margin: 0;
-      padding-top: 50px;
-      font-size: 48px;
+      padding-top: ${RF("50px")};
+      font-size: ${RF("48px")};
       font-weight: 700;
-      line-height: 58px;
+      line-height: ${RF("58px")};
       letter-spacing: 0.4;
     }
     .weDo-text {
-      font-size: 20px;
+      font-size: ${RF("20px")};
       font-weight: 500;
-      line-height: 32px;
+      line-height: ${RF("32px")};
       margin: 0;
-      padding: 8px 0 45px;
+      padding: ${RF("8px")} 0 ${RF("45px")};
     }
-    div {
-      text-align: center;
-    }
-    .ant-card-hoverable {
-      overflow: hidden;
-    }
-    .wedo-meta-data {
-      top: 60%;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      min-height: 95px;
-      overflow: hidden;
-      color: white;
-      position: absolute;
-      padding: 25px 0 10px 0;
-      color: #ffffff !important;
-      transition: 0.35s ease-in-out;
-      background-color: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(5px);
-      .actual_span_hover {
-        display: none;
-      }
-      .ant-card-meta-title {
+
+    .wedo_card_main {
+      display: flex;
+      gap: ${RF("20px")};
+      cursor: pointer;
+      .wedo_card {
+        width: 100%;
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 10px;
-        width: fit-content;
-        margin: auto;
-      }
-      .ant-card-meta-title:: after {
-        position: absolute;
-        content: "";
-        width: 60px;
-        height: 4px;
-        background: #f2d25c;
-        color: #f2d25c;
-        bottom: 0;
+        overflow: hidden;
         transition: 0.35s ease-in-out;
-      }
-      .banner-btn {
-        display: none;
-        width: 140px;
-        height: 40px;
-        margin: 10px auto auto auto;
-        .btn_text {
-          font-size: 12px;
+        img {
+          width: 100%;
+        }
+        .wedo_card_hover {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          z-index: 5;
+          top: 65%;
+          padding: ${RF("20px")} 0 ${RF("20px")} 0;
+          background-color: rgb(0 0 0 / 44%);
+          backdrop-filter: blur(5px);
+          color: #fff;
+          transition: 0.7s ease-in-out;
+          h1 {
+            font-family: IBM Plex Sans;
+            font-size: ${RF("24px")};
+            font-weight: 600;
+            line-height: ${RF("32px")};
+            letter-spacing: 0em;
+            text-align: center;
+            position: relative;
+            width: fit-content;
+            margin: auto;
+            &::after {
+              content: " ";
+              bottom: ${RF("-10px")};
+              width: ${RF("60px")};
+              height: ${RF("4px")};
+              color: #f2d25c;
+              background: #f2d25c;
+              position: absolute;
+              margin: auto;
+              left: 22%;
+              transition: 1s ease-in-out;
+            }
+          }
+          p {
+            font-family: IBM Plex Sans;
+            font-size: ${RF("20px")};
+            font-weight: 400;
+            line-height: ${RF("28px")};
+            letter-spacing: 0em;
+            text-align: center;
+            width: ${RF("362px")};
+            margin: ${RF("25px")} auto auto auto;
+          }
+          .wedo_desc2 {
+            display: none;
+          }
+          .banner-btn {
+            display: none;
+            width: ${RF("140px")};
+            height: ${RF("40px")};
+            font-size: ${RF("16px")};
+            border-radius: ${RF("4px")};
+            color: #ffff;
+            background: black;
+            border: 1px solid #fff;
+            margin: ${RF("20px")} auto auto auto;
+            .btn_text {
+              color: #ffff;
+            }
+            .back_animation {
+              background: transparent;
+            }
+          }
+          .banner-btn:hover {
+            border: ${RF("1px")} solid #275cbe;
+            .btn_text {
+              color: #275cbe;
+            }
+            .back_animation {
+              background: #275cbe;
+            }
+          }
         }
       }
-    }
-    .ant-card-body {
-      padding: 0;
-    }
-
-    .ant-card-hoverable:hover {
-      .wedo-meta-data {
-        top: 0;
-        height: 100%;
-      }
-      .banner-btn {
-        display: flex;
-      }
-      .actual_span {
-        display: none;
-      }
-      .actual_span_hover {
-        display: inherit;
-      }
-      .ant-card-meta-title:: after {
-        width: 100%;
-      }
-    }
-    .ant-row {
-      margin-left: auto !important;
-      margin-right: auto !important;
-      width: 78%;
-    }
-    .ant-card-meta-title {
-      color: #ffffff;
-      font-size: 1.5vw;
-      font-weight: 600;
-      line-height: 32px;
-    }
-    .ant-card-meta-description {
-      font-size: 1.2vw;
-      font-weight: 400;
-      line-height: auto;
-      color: #ffffff;
-      padding: 9px 5px;
-    }
-  }
-  @media (max-width: 768px) {
-    .weDo {
-      background: #f2f7fe;
-      padding: 0 10px 30px;
-      .weDo-content {
-        padding: 0 20px;
-      }
-      .ant-card-meta-title {
-        font-family: IBM Plex Sans;
-        font-size: 30px;
-        font-weight: 600;
-        line-height: 29px;
-      }
-      .ant-card-meta-description {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: inherit;
-        padding: 0px 30px 9px;
-        opacity: 80%;
-        margin-top: 15px;
-      }
-
-      h1 {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 31px;
-        letter-spacing: 0.4px;
-        text-align: center;
-        padding-top: 42px;
-      }
-      .weDo-text {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 26px;
-        text-align: center;
-        padding: 8px 0 29px;
-      }
-      ${
-        "" /* .weDo-card3 {
-        display: none;
-      }
-      .weDo-card2 {
-        display: none;
-      }
-      .wedo-meta-data {
-        position: relative !important;
-      } */
-      }
-      .ant-row {
-        width: 100%;
-      }
-      .ant-col-8 {
-        width: 100% !important;
-        max-width: 100% !important;
-        flex: 0 0 100% !important;
-        padding-bottom: 15px;
-      }
-      .wedo-meta-data {
-        top: 68%;
-        padding-top: 32px;
-        background-color: rgba(0, 0, 0, 0.7) !important;
-        .banner-btn {
-          margin: 27px auto auto auto;
+      .wedo_card:hover {
+        .wedo_card_hover {
+          top: 0;
+          h1 {
+            &::after {
+              width: 100%;
+              left: 0;
+            }
+          }
+          .wedo_desc1 {
+            display: none;
+          }
+          .wedo_desc2 {
+            display: inherit;
+          }
+          .banner-btn {
+            display: flex;
+          }
         }
       }
     }
   }
 
-  @media (max-width: 455px) {
-    .weDo {
-      .weDo-content {
-        padding: 0 10px;
-      }
-      .ant-card-meta-title {
-        font-size: 15px;
-      }
-      .wedo-meta-data {
-        padding: 10px 0;
-        .ant-card-meta-title:: after {
-          bottom: 8px;
-        }
-      }
-      .ant-card-meta-description {
-        font-size: 14px;
-        margin: 0;
-      }
-
-      .ant-card-hoverable {
-        .banner-btn {
-          width: 39%;
-          font-size: 55%;
-        }
-      }
-    }
-  }
+  ${'' /* @media (max-width: 750px) {
+    .weDo
+  } */}
 `;

@@ -1,67 +1,54 @@
 import styled from "styled-components";
 import * as palette from "../../../../styles/variables";
-
-export const pixFun = (num) => num / 14.5;
-export const MobPixFun = (num) => num / 4.8;
+import {pixFun, MobPixFun, RF} from "../../../../reusableComponents/Function/functions";
 
 export const WhyUsStyle = styled.div`
   background: #ebf6fa;
+  height: ${RF('640px')};
   .ant-carousel .slick-dots {
     width: fit-content !important;
-    bottom: -${pixFun(10)}vw;
+    bottom: -${RF('10px')};
     .slick-active {
-      width: ${pixFun(114)}vw !important;
+      width: ${RF('114px')} !important;
       button {
-        height: ${pixFun(7)}vw;
-        border-radius: ${pixFun(10)}vw;
+        height: ${RF('7px')};
+        border-radius: ${RF('10px')};
         background: #275cbe !important;
       }
     }
 
     li {
       button {
-        height: ${pixFun(7)}vw;
-        border-radius: ${pixFun(10)}vw;
+        height: ${RF('7px')};
+        border-radius: ${RF('10px')};
         background: pink !important;
-      }
-    }
-
-    @media (max-width: 850px) {
-      left: 4%;
-      bottom: 5px;
-      li {
-        button {
-          height: 6px !important;
-        }
-      }
-      .slick-active {
-        width: 70px !important;
       }
     }
   }
 
   .about-us {
     display: flex !important;
-    padding: ${pixFun(25)}vw ${pixFun(25)}vw ${pixFun(25)}vw ${pixFun(30)}vw;
+    padding: ${RF('25px')} ${RF('100px')} ${RF('25px')} ${RF('100px')};
 
     .aboutus-bottom-casestudy {
-      width: ${pixFun(550)}vw;
-      padding: 0 ${pixFun(25)}vw ${pixFun(50)}vw ${pixFun(25)}vw !important;
+      width: ${RF('602px')};
+      height: ${RF('545px')};
+      padding: 0 ${RF('25px')} ${RF('50px')} ${RF('25px')} !important;
       background-color: #fff !important;
       .about-title {
-        font-size: ${pixFun(24)}vw;
+        font-size: ${RF('24px')};
         font-weight: 600;
-        line-height: ${pixFun(29)}vw;
+        line-height: ${RF('29px')};
       }
       .about-desc-title {
-        font-size: ${pixFun(24)}vw;
+        font-size: ${RF('24px')};
         font-weight: 700;
-        line-height: ${pixFun(32)}vw;
+        line-height: ${RF('32px')};
       }
       .casestudy-text {
-        font-size: ${pixFun(18)}vw;
+        font-size: ${RF('18px')};
         font-weight: 400;
-        line-height: ${pixFun(28)}vw;
+        line-height: ${RF('28px')};
       }
       .aboutus-bottom-img-container {
         img {
@@ -101,50 +88,50 @@ export const WhyUsStyle = styled.div`
     .aboutus-bottom-whyus {
       margin: auto 0;
       .aboutus-head {
-        font-size: ${pixFun(48)}vw;
+        font-size: ${RF('48px')};
         font-weight: 700;
-        line-height: ${pixFun(40)}vw;
+        line-height: ${RF('40px')};
       }
       .aboutus-text {
-        font-size: ${pixFun(19)}vw;
+        font-size: ${RF('19px')};
         font-weight: 400;
-        line-height: ${pixFun(34)}vw;
-        width: ${pixFun(600)}vw;
+        line-height: ${RF('34px')};
+        width: ${RF('600px')};
       }
     }
 
     .aboutus-bottom-advantages-content {
       position: relative;
-      max-width: ${pixFun(600)}vw;
+      max-width: ${RF('600px')};
       background-color: #ffffff;
-      padding: ${pixFun(40)}vw ${pixFun(20)}vw ${pixFun(40)}vw ${pixFun(20)}vw;
+      padding: ${RF('40px')} ${RF('20px')} ${RF('40px')} ${RF('20px')};
       text-align: center;
-      border-radius: ${pixFun(16)}vw;
+      border-radius: ${RF('16px')};
       h2 {
-        font-size: ${pixFun(40)}vw;
+        font-size: ${RF('40px')};
         font-weight: 700;
-        line-height: ${pixFun(48)}vw;
-        letter-spacing: ${pixFun(0.4)}vw;
+        line-height: ${RF('48px')};
+        letter-spacing: ${RF('0.4px')};
         margin: 0;
-        padding: ${pixFun(18)}vw 0;
+        padding: ${RF('18px')} 0;
       }
       .adv-description {
-        font-size: ${pixFun(19)}vw;
+        font-size: ${RF('19px')};
         font-weight: 400;
-        line-height: ${pixFun(34)}vw;
+        line-height: ${RF('34px')};
         margin: 0;
-        padding: ${pixFun(18)}vw ${pixFun(60)}vw ${pixFun(32)}vw;
+        padding: ${RF('18px')} ${RF('60px')} ${RF('32px')};
       }
       .adv-text {
-        padding: 0 ${pixFun(36)}vw;
-        font-size: ${pixFun(14)}vw;
+        padding: 0 ${RF('36px')};
+        font-size: ${RF('14px')};
         font-weight: bold;
-        line-height: ${pixFun(20)}vw;
+        line-height: ${RF('20px')};
       }
       .close-btn {
         position: absolute;
-        top: ${pixFun(18)}vw;
-        right: ${pixFun(18)}vw;
+        top: ${RF('18px')};
+        right: ${RF('18px')};
         cursor: pointer;
         transition: 0.35s ease-in-out;
       }

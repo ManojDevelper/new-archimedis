@@ -1,5 +1,10 @@
 import styled from "styled-components";
 import * as palette from "../../../../styles/variables";
+import {
+  pixFun,
+  MobPixFun,
+  RF,
+} from "../../../../reusableComponents/Function/functions";
 
 export const AboutUsStyle = styled.div`
   .aboutus-top-mob {
@@ -9,158 +14,49 @@ export const AboutUsStyle = styled.div`
     display: none;
   }
   .about-us {
-    // margin-bottom: 80px;
+    ${'' /* margin-bottom: 80px")}; */}
     h1 {
-      font-size: 48px;
+      font-size: ${RF("48px")};
       font-weight: 700;
-      line-height: 58px;
+      line-height: ${RF("58px")};
       margin: 0;
     }
     h3 {
-      font-size: 24px;
+      font-size: ${RF("24px")};
       font-weight: 600;
       color: #212121;
     }
     .aboutus-text {
-      font-size: 18px;
+      font-size: ${RF("18px")};
       font-weight: 400;
-      line-height: 32px;
+      line-height: ${RF("32px")};
       margin: 0;
-      padding: 10px 0 27px;
+      padding: ${RF("10px")} 0 ${RF("27px")};
     }
     .aboutus-top {
-      padding: 35px 40px 80px 65px;
+      padding:${RF("50px")} ${RF("90px")} ${RF("100px")} ${RF("100px")};
     }
     .aboutus-bottom {
       background-color: #ebf6fa;
       width: 100%;
     }
-
-    .aboutus-bottom-casestudy {
-      transition: 0.35s ease-in-out;
-    }
-
-    .aboutus-bottom-whyus {
-      transition: 0.35s ease-in-out;
-    }
-
-    .aboutus-bg-container-img {
-      margin-left: 35px;
-    }
+    
     .aboutus-bg-container {
+      width: ${RF("650px")};
+      height: ${RF("421px")};
       position: relative;
-      img {
-        width: 93.6%;
-      }
-    }
-    .aboutus-main-container {
-      position: absolute;
-      top: 30px;
-      overflow: hidden;
-      img {
-        width: 93.6%;
-        transition: transform 0.2s;
-      }
-      img:hover {
-        transform: scale(1.1);
-      }
-    }
-
-    .aboutus-bottom-img-container {
-      overflow: hidden;
-      img {
-        width: 93.6%;
-        transition: transform 0.2s;
-      }
-      img:hover {
-        transform: scale(1.1);
-      }
-    }
-    .aboutus-bottom-advantages-content {
-      position: relative;
-      background-color: #ffffff;
-      padding: 40px 40px 8px;
-      text-align: center;
-      border-radius: 16px;
-      margin-right: 86px;
-      h2 {
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 48px;
-        letter-spacing: 0.4px;
-        margin: 0;
-        padding: 18px 0;
-      }
-      .adv-description {
-        font-size: 19px;
-        font-weight: 400;
-        line-height: 34px;
-        margin: 0;
-        padding: 18px 60px 32px;
-      }
-      .adv-text {
-        padding: 0 36px;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 20px;
-      }
-      .close-btn{
+      margin-left: ${RF("80px")};
+      background-color: #275CBE;
+      .zoom_img {
         position: absolute;
-        top: 18px;
-        right: 18px;
-        cursor: pointer;
-        transition: 0.35s ease-in-out;
+        width: 100%;
+        transition: transform 0.2s;
+        right: ${RF("24px")};
+        top: ${RF("24px")};
       }
-      .close-btn:hover {
-        transform: scale(1.1);
+      .zoom_img:hover {
+        transform: scale(1.02);
       }
-      .row_img {
-        cursor: pointer;
-        transition: 0.35s ease-in-out;
-      }
-      .row_img:hover {
-        transform: scale(1.2);
-      }
-    }
-
-    button {
-      height: auto;
-      padding: 16px 40px;
-      border-radius: 8px;
-      font-family: Inter;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 22px;
-    }
-    .aboutus-top-btn:hover {
-      color: #ffffff !important;
-      background: #275cbe;
-    }
-    .aboutus-bottom-btn:hover {
-      background: #ffffff;
-      color: #333333;
-      border: 1px solid #684aef;
-    }
-    .aboutus-bottom-btn {
-      background: #ffffff;
-      color: #333333;
-      border: 1.5px solid #684aef;
-    }
-    .aboutus-top-btn {
-      background: #275cbe;
-      color: #ffffff;
-    }
-    .casestudy-text {
-      font-size: 18px;
-      font-weight: 400;
-      margin-top: 10px;
-      color: #212121;
-    }
-    .aboutus-bottom-casestudy {
-      padding: 25px 0 25px 67px;
-    }
-    .aboutus-bottom-advantage {
-      padding-right: 88px;
     }
   }
   @media (max-width: 768px) {
@@ -175,43 +71,43 @@ export const AboutUsStyle = styled.div`
     }
 
     .aboutus-top-mob {
-      margin-top: 50px;
+      margin-top: ${RF("50px")};
       display: block;
-      padding: 0 10px 40px 10px;
+      padding: 0 ${RF("10px")} ${RF("40px")} ${RF("10px")};
       h1 {
         font-family: IBM Plex Sans;
-        font-size: 24px;
+        font-size: ${RF("24px")};
         font-weight: 700;
-        line-height: 31px;
-        letter-spacing: 0.4px;
+        line-height: ${RF("31px")};
+        letter-spacing: ${RF("0.4px")};
         text-align: center;
         color: #0f1629;
       }
       .banner-btn {
-        width: 182px;
-        height: 52px;
+        width: ${RF("182px")};
+        height: ${RF("52px")};
         margin-left: auto;
         margin-right: auto;
       }
       .aboutus-bg-container-img {
-        margin-left: 15px;
+        margin-left: ${RF("15px")};
       }
       .aboutus-text {
         font-family: IBM Plex Sans;
-        font-size: 16px;
+        font-size: ${RF("16px")};
         font-weight: 400;
-        line-height: 30px;
+        line-height: ${RF("30px")};
         text-align: center;
-        padding: 10px 0 20px;
+        padding: ${RF("10px")} 0 ${RF("20px")};
       }
       button {
         height: auto;
-        padding: 10px 15px;
-        border-radius: 8px;
+        padding: ${RF("10px")} ${RF("15px")};
+        border-radius: ${RF("8px")};
         font-family: IBM Plex Sans;
-        font-size: 16px;
+        font-size: ${RF("16px")};
         font-weight: 700;
-        line-height: 21px;
+        line-height: ${RF("21px")};
         letter-spacing: 0em;
         text-align: center;
         margin-left: auto;
@@ -226,107 +122,107 @@ export const AboutUsStyle = styled.div`
       }
       .aboutus-main-container {
         position: absolute !important;
-        top: 16px !important;
+        top: ${RF("16px")} !important;
       }
       .aboutus-top-mob-content {
-        margin-top: 37px;
-        padding: 0 10px;
+        margin-top: ${RF("37px")};
+        padding: 0 ${RF("10px")};
       }
     }
     .aboutus-bottom-mob {
       background: #ebf6fa;
       display: block;
-      padding: 50px 18px 40px;
-      margin-top: 50px;
+      padding: ${RF("50px")} ${RF("18px")} ${RF("40px")};
+      margin-top: ${RF("50px")};
       h1 {
         font-family: IBM Plex Sans;
-        font-size: 24px;
+        font-size: ${RF("24px")};
         font-weight: 700;
-        line-height: 31px;
-        letter-spacing: 0.4px;
+        line-height: ${RF("31px")};
+        letter-spacing: ${RF("0.4px")};
         text-align: center;
         color: #0f1629;
       }
       .banner-btn {
-        width: 182px;
-        height: 52px;
+        width: ${RF("182px")};
+        height: ${RF("52px")};
         margin-left: auto;
         margin-right: auto;
       }
       .aboutus-text {
         font-family: IBM Plex Sans;
-        font-size: 16px;
+        font-size: ${RF("16px")};
         font-weight: 400;
-        line-height: 30px;
+        line-height: ${RF("30px")};
         text-align: center;
-        padding: 10px 0 20px;
+        padding: ${RF("10px")} 0 ${RF("20px")};
       }
       .aboutus-bottom-btn {
-        padding: 10px 15px;
+        padding: ${RF("10px")} ${RF("15px")};
         font-family: IBM Plex Sans;
-        font-size: 16px;
+        font-size: ${RF("16px")};
         font-weight: 500;
-        line-height: 21px;
+        line-height: ${RF("21px")};
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         display: block;
       }
       .aboutus-bottom-advantages-content{
-        border-radius: 8px;
-        padding: 40px 21px 8px;
-        margin-top: 50px;
+        border-radius: ${RF("8px")};
+        padding: ${RF("40px")} ${RF("21px")} ${RF("8px")};
+        margin-top: ${RF("50px")};
         .ant-col-8{
       display: block;
       flex: 0 0 100%;
       max-width: 100%;
-      margin-top: 22px;
+      margin-top: ${RF("22px")};
       }
       .ant-col-12{
         display: block;
         flex: 0 0 100%;
         max-width: 100%;
-        margin-top: 22px;
+        margin-top: ${RF("22px")};
         }
         .adv-text{
           padding: 0;
         }
       .adv-description {
-          font-size: 16px;
-          line-height: 28px;
+          font-size: ${RF("16px")};
+          line-height: ${RF("28px")};
           margin: 0;
-          margin-top: 0px;
-          padding: 0 0 10px;
+          margin-top: ${RF("0px")};
+          padding: 0 0 ${RF("10px")};
       }
      h2 {
-        font-size: 24px;
-        line-height: 32px;
-        padding: 0px 0 10px;
+        font-size: ${RF("24px")};
+        line-height: ${RF("32px")};
+        padding: 0px 0 ${RF("10px")};
     }
     .close-btn {
-      top: 12px;
-      right: 12px;
-      width: 29px;
+      top: ${RF("12px")};
+      right: ${RF("12px")};
+      width: ${RF("29px")};
   }
     }
       .aboutus-bottom-mob-casestudy {
-        margin-top: 50px;
+        margin-top: ${RF("50px")};
         background: #ffffff;
-        padding: 5px 20px 8px 20px;
-        margin-bottom: 40px;
+        padding: ${RF("5px")} ${RF("20px")} ${RF("8px")} ${RF("20px")};
+        margin-bottom: ${RF("40px")};
         h3 {
           font-family: IBM Plex Sans;
-          font-size: 16px;
+          font-size: ${RF("16px")};
           font-weight: 600;
-          line-height: 21px;
+          line-height: ${RF("21px")};
           color: #212121;
-          margin: 4px 0 7px;
+          margin: ${RF("4px")} 0 ${RF("7px")};
         }
         .casestudy-text {
           font-family: IBM Plex Sans;
-          font-size: 12px;
+          font-size: ${RF("12px")};
           font-weight: 400;
-          line-height: 16px;
+          line-height: ${RF("16px")};
           color: #424242;
         }
       }

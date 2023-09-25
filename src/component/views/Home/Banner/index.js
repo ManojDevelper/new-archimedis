@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { BannerStyle } from "./styles";
 import { Col, Row } from "antd";
 import ButtonCompo from "../../../../reusableComponents/views/Button";
-import { ArrowRightOutlined } from "@ant-design/icons";
 import bannerRes from '../../../../assets/home/banner/bannerRes.png';
 import facebook from '../../../../assets/home/banner/banner_facebook.png';
 import instagram from '../../../../assets/home/banner/banner_instagram.png';

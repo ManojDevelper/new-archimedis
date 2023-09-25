@@ -1,5 +1,10 @@
 import styled from "styled-components";
 // import * as palette from "../../../styles/variables";
+import {
+  pixFun,
+  MobPixFun,
+  RF,
+} from "../../../reusableComponents/Function/functions";
 
 export const ButtonStyle = styled.div`
   .banner-btn {
@@ -7,20 +12,21 @@ export const ButtonStyle = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 218px;
-    height: 56px;
-    overflow: hidden;
+    width: ${RF("218px")};
+    height: ${RF("56px")};
+    overflow: hidden !important;
     cursor: pointer;
     font-family: Inter;
-    font-size: 18px;
+    font-size: ${RF("18px")};
     font-weight: 700;
-    line-height: 22px;
-    border-radius: 8px;
-    border: 1px solid #fff;
+    line-height: ${RF("22px")};
+    border-radius: ${RF("8px")};
+    border: ${RF("1px")} solid #fff;
     background-color: transparent;
     .btn_text {
       color: #275cbe;
       z-index: 1;
+      font-family: 'IBM Plex Sans';
     }
     .back_animation {
       position: absolute;
@@ -29,7 +35,7 @@ export const ButtonStyle = styled.div`
       top: 0;
       left: 0;
       background-color: white;
-      z-index: 0;
+      z-index: 1;
       transition: 0.35s ease-in-out;
     }
   }
@@ -63,7 +69,7 @@ export const ButtonStyle = styled.div`
 
   ${"" /* bg-blue (background blue, Hover border white) */}
   .bg-blue {
-    border: 1px solid #275cbe;
+    border: ${RF("1px")} solid #275cbe;
     .btn_text {
       color: #fff;
     }
@@ -81,7 +87,7 @@ export const ButtonStyle = styled.div`
 
   ${"" /* bg-blue-border (background blue, Hover border blue) */}
   .bg-blue-border {
-    border: 1px solid #275cbe;
+    border: ${RF("1px")} solid #275cbe;
     .btn_text {
       color: #fff;
     }
@@ -101,7 +107,7 @@ export const ButtonStyle = styled.div`
     "" /* bg-blue-border-black-txt (background white, border blue, Hover border white) */
   }
   .bg-blue-border-black-txt {
-    border: 1px solid #275cbe;
+    border: ${RF("1px")} solid #275cbe;
     .btn_text {
       color: #333333;
     }

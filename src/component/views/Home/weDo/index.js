@@ -19,11 +19,44 @@ const WeDo = () => {
   return (
     <WeDoStyle>
       <div className="weDo">
-        <h1 data-aos="fade-down" data-aos-duration="1000">What we do?</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000"
+        className="wedo_title">What we do?</h1>
         <p className="weDo-text" data-aos="fade-down" data-aos-duration="1500">
           We help life science clients with digital products and services
         </p>
-        <Row gutter={35}>
+        <div className="wedo_card_main" data-aos="fade-down" data-aos-duration="200">
+          <div className="wedo_card">
+            <img src={wedoImg1} alt="wedoImg1"/>
+            <div className="wedo_card_hover">
+              <h1>Products</h1>
+              <p className="wedo_desc1">Customized digital tools exclusively designed for life science users.</p>
+              <p className="wedo_desc2">Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users</p>
+              <ButtonCompo text="Know More"
+              />
+            </div>
+          </div>
+          <div className="wedo_card">
+            <img src={wedoImg2} alt="wedoImg1"/>
+            <div className="wedo_card_hover">
+              <h1>Solutions</h1>
+              <p className="wedo_desc1">Customized digital tools exclusively designed for life science users.</p>
+              <p className="wedo_desc2">Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users</p>
+              <ButtonCompo text="Know More"
+              />
+            </div>
+          </div>
+          <div className="wedo_card">
+            <img src={wedoImg3} alt="wedoImg1"/>
+            <div className="wedo_card_hover">
+              <h1>Services</h1>
+              <p className="wedo_desc1">Customized digital tools exclusively designed for life science users.</p>
+              <p className="wedo_desc2">Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users</p>
+              <ButtonCompo text="Know More"
+              />
+            </div>
+          </div>
+        </div>
+        {/* <Row gutter={40}>
           <Col span={8} className="weDo-card1" data-aos="fade-down" data-aos-duration="1500">
             <Card
               bordered={false}
@@ -109,7 +142,7 @@ const WeDo = () => {
               </div>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
       </div>
     </WeDoStyle>
   );
