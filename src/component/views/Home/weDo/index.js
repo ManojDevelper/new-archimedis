@@ -109,11 +109,22 @@ const WeDo = () => {
               </div>
             </div>
             <div className="wedo_card">
-              <img src={wedoImg1} alt="wedoImg1" />
+              <img src={wedoImg2} alt="wedoImg2" />
               <div className="wedo_card_hover">
-                <h1>Productssss</h1>
+                <h1>Solutions</h1>
                 <p className="wedo_desc1">Customized digital tools exclusively designed for life science users.</p>
                 <p className="wedo_desc2">Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users</p>
+                <ButtonCompo text="Know More"
+                  type="bg-trans-border-white-txt"
+                />
+              </div>
+            </div>
+            <div className="wedo_card">
+              <img src={wedoImg3} alt="wedoImg1" />
+              <div className="wedo_card_hover">
+                <h1>Services</h1>
+                <p className="wedo_desc1">Customized digital tools exclusively designed for life science users.</p>
+                <p className="wedo_desc2">Lorem ipsum dolor sit amet consectetur. Vitae viverra orci id id lacus sed integer egestas. Euismod tristique nulla nunc dictum ac molestie vulputate. Morbi eget malesuada est ultrices aenean. Duis in sit eget pulvinar in tortor.</p>
                 <ButtonCompo text="Know More"
                   type="bg-trans-border-white-txt"
                 />

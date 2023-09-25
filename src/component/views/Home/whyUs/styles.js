@@ -4,8 +4,8 @@ import {pixFun, MobPixFun, RF, MRF} from "../../../../reusableComponents/Functio
 
 export const WhyUsStyle = styled.div`
   background: #ebf6fa;
-  height: ${RF('640px')};
-  @media (max-width: 750px) {
+  height: ${RF('650px')};
+  @media (max-width: 650px) {
     height: fit-content;
   }
   .ant-carousel .slick-dots {
@@ -62,8 +62,9 @@ export const WhyUsStyle = styled.div`
         }
       }
 
-      @media (max-width: 850px) {
+      @media (max-width: 650px) {
         width: 88%;
+        height: fit-content;
         margin: 0 auto;
         .about-side-carousal {
           padding: ${MRF("10px")} ${MRF("21px")};
@@ -149,7 +150,7 @@ export const WhyUsStyle = styled.div`
       .row_img:hover {
         transform: scale(1.2);
       }
-      @media (max-width: 850px) {
+      @media (max-width: 650px) {
         .close-btn {
           right: ${MRF("36px")};
           top: ${MRF("28px")};
@@ -157,7 +158,7 @@ export const WhyUsStyle = styled.div`
       }
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 650px) {
       padding: 0 0 ${MRF("25px")} 0;
       flex-direction: column-reverse;
       .aboutus-bottom-whyus {
@@ -177,19 +178,19 @@ export const WhyUsStyle = styled.div`
           text-align: center;
           width: 100%;
         }
-
         .banner-btn {
+          margin: auto;
           width: ${MRF("182px")};
           height: ${MRF("52px")};
-          margin-left: auto;
-          margin-right: auto;
+          font-size: ${MRF("16px")};
+          border-radius: ${MRF("8px")};
         }
       }
     }
   }
 
   .about-us-mob {
-    @media (max-width: 850px) {
+    @media (max-width: 650px) {
       flex-direction: column;
       .aboutus-bottom-advantages-content {
         padding: ${MRF("67px")} 0 ${MRF("16px")} 0;

@@ -55,11 +55,20 @@ const BookDemo = () => {
             {/* <Button className="book-btn">Book a consultation</Button>
               <Button className="contact-btn">Contact us</Button> */}
 
-            <ButtonCompo text="Book a consultation" type="bg-blue-border" icon={false} />
+            <ButtonCompo text="Book a consultation" type="bg-blue-border" icon={false}
+              aos={{
+                "data-aos": "fade-down",
+                "data-aos-duration": "2000"
+              }}
+            />
             <ButtonCompo
               text="Contact us"
               type="bg-trans-border-white-txt"
               icon={false}
+              aos={{
+                "data-aos": "fade-down",
+                "data-aos-duration": "2000"
+              }}
             />
           </div>
         </div>

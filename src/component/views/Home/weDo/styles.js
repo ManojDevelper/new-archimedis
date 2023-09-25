@@ -121,7 +121,7 @@ export const WeDoStyle = styled.div`
     }
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 650px) {
     .weDo {
       display: none;
     }

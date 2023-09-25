@@ -86,7 +86,7 @@ export const BannerStyle = styled.div`
       transform: scale(1.2);
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 650px) {
     .banner {
       display: none;
     }
@@ -115,9 +115,9 @@ export const BannerStyle = styled.div`
       .banner-btn {
         margin-left: auto;
         margin-right: auto;
-        width: ${MRF("155px")};
-        height: ${MRF("40px")};
-        font-size: ${MRF("18px")};
+        width: ${MRF("182px")};
+        height: ${MRF("52px")};
+        font-size: ${MRF("16px")};
         border-radius: ${MRF("8px")};
       }
       ${

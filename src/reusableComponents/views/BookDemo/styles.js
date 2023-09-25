@@ -12,10 +12,6 @@ export const BookDemoStyle = styled.div`
     display: none;
   }
   .book-demo {
-    ${
-      "" /* text-align: center;
-    padding-bottom: 50px")}; */
-    }
     background-color: #02060C;
     position: relative;
     h1 {
@@ -70,7 +66,7 @@ export const BookDemoStyle = styled.div`
       margin-bottom: auto;
     }
   }
-  @media (max-width: 850px) {
+  @media (max-width: 650px) {
     .book-demo {
       display: none;
     }
@@ -138,9 +134,9 @@ export const BookDemoStyle = styled.div`
       .banner-btn {
         margin-left: auto;
         margin-right: auto;
-        width: ${MRF("210px")};
-        height: ${MRF("40px")};
-        font-size: ${MRF("18px")};
+        width: ${MRF("245px")};
+        height: ${MRF("54px")};
+        font-size: ${MRF("16px")};
         border-radius: ${MRF("8px")};
       }
     }

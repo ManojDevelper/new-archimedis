@@ -44,7 +44,7 @@ export const FooterStyle = styled.div`
       padding-top: 10px;
     }
     .video-cover-container {
-      padding-top: 45px;
+      padding-top: 0;
     }
     .footer-description {
       font-size: 15px;
