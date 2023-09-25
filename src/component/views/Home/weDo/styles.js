@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import {
-  RF,
-  MRF
-} from "../../../../reusableComponents/Function/functions";
+import { RF, MRF } from "../../../../reusableComponents/Function/functions";
 
 export const WeDoStyle = styled.div`
+  .weDo_mob {
+    display: none;
+  }
   .weDo {
-    padding:${RF("50px")} ${RF("100px")} ${RF("100px")} ${RF("100px")};
+    padding: ${RF("50px")} ${RF("100px")} ${RF("100px")} ${RF("100px")};
     text-align: center;
     background: #ebf6fa;
     .wedo_title {
@@ -43,7 +43,7 @@ export const WeDoStyle = styled.div`
           position: absolute;
           z-index: 5;
           top: 65%;
-          padding: ${RF("20px")} 0 ${RF("20px")} 0;
+          padding: ${RF("25px")} 0 ${RF("20px")} 0;
           background-color: rgb(0 0 0 / 44%);
           backdrop-filter: blur(5px);
           color: #fff;
@@ -73,12 +73,12 @@ export const WeDoStyle = styled.div`
           }
           p {
             font-family: IBM Plex Sans;
-            font-size: ${RF("20px")};
+            font-size: ${RF("23px")};
             font-weight: 400;
-            line-height: ${RF("28px")};
+            line-height: ${RF("35px")};
             letter-spacing: 0em;
             text-align: center;
-            width: ${RF("362px")};
+            width: ${RF("380px")};
             margin: ${RF("25px")} auto auto auto;
           }
           .wedo_desc2 {
@@ -90,24 +90,10 @@ export const WeDoStyle = styled.div`
             height: ${RF("40px")};
             font-size: ${RF("16px")};
             border-radius: ${RF("4px")};
-            color: #ffff;
-            background: black;
-            border: 1px solid #fff;
-            margin: ${RF("20px")} auto auto auto;
-            .btn_text {
-              color: #ffff;
-            }
+            margin: ${RF("35px")} auto auto auto;
             .back_animation {
-              background: transparent;
-            }
-          }
-          .banner-btn:hover {
-            border: ${RF("1px")} solid #275cbe;
-            .btn_text {
-              color: #275cbe;
-            }
-            .back_animation {
-              background: #275cbe;
+              background-color: black;
+          backdrop-filter: blur(5px);
             }
           }
         }
@@ -135,7 +121,59 @@ export const WeDoStyle = styled.div`
     }
   }
 
-  ${'' /* @media (max-width: 750px) {
-    .weDo
-  } */}
+  @media (max-width: 750px) {
+    .weDo {
+      display: none;
+    }
+    .weDo_mob {
+      display: block;
+      padding: ${MRF("50px")} ${MRF("30px")} ${MRF("50px")} ${MRF("30px")};
+      text-align: center;
+      background: #ebf6fa;
+      .wedo_title {
+        margin: 0;
+        font-size: ${MRF("24px")};
+        font-weight: 700;
+        letter-spacing: 0.4;
+      }
+      .weDo-text {
+        font-size: ${MRF("16")};
+        font-weight: 500;
+        line-height: ${MRF("26px")};
+        margin: ${MRF("13px")} auto 0 auto;
+        width: ${MRF("334px")};
+      }
+      .wedo_card_main {
+        display: block;
+        .wedo_card {
+          .wedo_card_hover {
+            padding: 40px 0 40px 0;
+            h1 {
+              font-size: 20px;
+              &::after {
+                content: " ";
+                bottom: ${MRF("-24px")};
+                width: ${MRF("46px")};
+                height: ${MRF("5px")};
+                left: 28%;
+              }
+            }
+            p {
+              font-size: ${MRF("16px")};
+              width: ${MRF("316px")};
+              line-height: ${MRF("22px")};
+              margin: ${MRF("44px")} auto auto auto;
+            }
+            .banner-btn {
+              width: ${MRF("130px")};
+              height: ${MRF("43px")};
+              font-size: ${MRF("14px")};
+              border-radius: ${MRF("6px")};
+              margin: ${MRF("17px")} auto auto auto;
+            }
+          }
+        }
+      }
+    }
+  }
 `;

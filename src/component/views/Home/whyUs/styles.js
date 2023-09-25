@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import * as palette from "../../../../styles/variables";
-import {pixFun, MobPixFun, RF} from "../../../../reusableComponents/Function/functions";
+import {pixFun, MobPixFun, RF, MRF} from "../../../../reusableComponents/Function/functions";
 
 export const WhyUsStyle = styled.div`
   background: #ebf6fa;
   height: ${RF('640px')};
+  @media (max-width: 750px) {
+    height: fit-content;
+  }
   .ant-carousel .slick-dots {
     width: fit-content !important;
     bottom: -${RF('10px')};
@@ -63,16 +66,16 @@ export const WhyUsStyle = styled.div`
         width: 88%;
         margin: 0 auto;
         .about-side-carousal {
-          padding: 10px 21px;
+          padding: ${MRF("10px")} ${MRF("21px")};
         }
         .about-title {
-          font-size: 16px;
+          font-size: ${MRF("16px")};
         }
         .about-desc-title {
-          font-size: 16px;
+          font-size: ${MRF("16px")};
         }
         .casestudy-text {
-          font-size: 12px;
+          font-size: ${MRF("12px")};
           width: 85%;
           line-height: inherit;
         }
@@ -148,36 +151,36 @@ export const WhyUsStyle = styled.div`
       }
       @media (max-width: 850px) {
         .close-btn {
-          right: 36px;
-          top: 28px;
+          right: ${MRF("36px")};
+          top: ${MRF("28px")};
         }
       }
     }
 
     @media (max-width: 850px) {
-      padding: 0 0 25px 0;
+      padding: 0 0 ${MRF("25px")} 0;
       flex-direction: column-reverse;
       .aboutus-bottom-whyus {
-        padding: 50px 10px !important;
+        padding: ${MRF("50px")} ${MRF("10px")} !important;
         text-align: center;
         .aboutus-head {
-          font-size: 24px;
+          font-size: ${MRF("24px")};
           font-weight: 700;
-          line-height: 31px;
-          letter-spacing: 0.4px;
+          line-height: ${MRF("31px")};
+          letter-spacing: ${MRF("0.4px")};
           text-align: center;
         }
         .aboutus-text {
-          font-size: 16px;
+          font-size: ${MRF("16px")};
           font-weight: 400;
-          line-height: 30px;
+          line-height: ${MRF("30px")};
           text-align: center;
           width: 100%;
         }
 
         .banner-btn {
-          width: 182px;
-          height: 52px;
+          width: ${MRF("182px")};
+          height: ${MRF("52px")};
           margin-left: auto;
           margin-right: auto;
         }
@@ -189,20 +192,20 @@ export const WhyUsStyle = styled.div`
     @media (max-width: 850px) {
       flex-direction: column;
       .aboutus-bottom-advantages-content {
-        padding: 67px 0 16px 0;
+        padding: ${MRF("67px")} 0 ${MRF("16px")} 0;
         max-width: 100% !important;
         h2 {
-          font-size: 24px;
+          font-size: ${MRF("24px")};
         }
         .adv-description {
-          font-size: 16px;
-          line-height: 26px;
+          font-size: ${MRF("16px")};
+          line-height: ${MRF("26px")};
         }
         .about-mob {
-          margin-top: 50px;
+          margin-top: ${MRF("50px")};
         }
         .adv-text {
-          font-size: 13px;
+          font-size: ${MRF("13px")};
           line-height: normal;
         }
       }

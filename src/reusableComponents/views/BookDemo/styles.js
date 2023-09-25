@@ -3,9 +3,8 @@ import styled from "styled-components";
 import bookDemoBg from "../../../../src/assets/reusableComponents/bookDemo/bookDemoMob.svg";
 import bookDemoImg from "../../../../src/assets/reusableComponents/bookDemo/bookDemoImg2.png";
 import {
-  pixFun,
-  MobPixFun,
   RF,
+  MRF
 } from "../../../reusableComponents/Function/functions";
 
 export const BookDemoStyle = styled.div`
@@ -87,27 +86,21 @@ export const BookDemoStyle = styled.div`
       .bg-trans-border-white-txt {
         background-color: transparent !important;
       }
-      .banner-btn {
-        width: ${RF("245px")};
-        height: ${RF("44px")};
-        margin-left: auto;
-        margin-right: auto;
-      }
       .demo-btn-container {
         display: flex;
         flex-direction: column;
-        gap: ${RF("15px")};
+        gap: ${MRF("15px")};
       }
       .book-btn {
         background: #ffffff;
         color: #275cbe;
-        padding: ${RF("10px")} ${RF("40px")};
+        padding: ${MRF("10px")} ${MRF("40px")};
         height: auto;
-        border: ${RF("2px")} solid #275cbe;
+        border: ${MRF("2px")} solid #275cbe;
         font-family: IBM Plex Sans;
-        font-size: ${RF("16px")};
+        font-size: ${MRF("16px")};
         font-weight: 600;
-        line-height: ${RF("21px")};
+        line-height: ${MRF("21px")};
         text-align: center;
         color: #ffffff;
         background: #275cbe;
@@ -115,32 +108,40 @@ export const BookDemoStyle = styled.div`
       .contact-btn {
         background: none;
         height: auto;
-        border: ${RF("2px")} solid #ffffff;
-        padding: ${RF("10px")} ${RF("73px")};
+        border: ${MRF("2px")} solid #ffffff;
+        padding: ${MRF("10px")} ${MRF("73px")};
         color: #ffffff;
         font-family: IBM Plex Sans;
-        font-size: ${RF("16px")};
+        font-size: ${MRF("16px")};
         font-weight: 600;
-        line-height: ${RF("21px")};
+        line-height: ${MRF("21px")};
         text-align: center;
-        margin-top: ${RF("18px")};
+        margin-top: ${MRF("18px")};
       }
       h1 {
         font-family: IBM Plex Sans;
-        font-size: ${RF("24px")};
+        font-size: ${MRF("24px")};
         font-weight: 700;
-        line-height: ${RF("31px")};
-        letter-spacing: ${RF("0.4px")};
+        line-height: ${MRF("31px")};
+        letter-spacing: ${MRF("0.4px")};
         color: #ffffff;
         margin: 0;
       }
       p {
         font-family: IBM Plex Sans;
-        font-size: ${RF("16px")};
+        font-size: ${MRF("16px")};
         font-weight: 400;
-        line-height: ${RF("23px")};
+        line-height: ${MRF("23px")};
         color: #ffffff;
-        margin: ${RF("8px")} 0 ${RF("35px")};
+        margin: ${MRF("8px")} 0 ${MRF("35px")};
+      }
+      .banner-btn {
+        margin-left: auto;
+        margin-right: auto;
+        width: ${MRF("210px")};
+        height: ${MRF("40px")};
+        font-size: ${MRF("18px")};
+        border-radius: ${MRF("8px")};
       }
     }
   }
