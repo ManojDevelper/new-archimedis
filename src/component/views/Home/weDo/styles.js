@@ -73,7 +73,7 @@ export const WeDoStyle = styled.div`
           }
           p {
             font-family: IBM Plex Sans;
-            font-size: ${RF("23px")};
+            font-size: ${RF("21px")};
             font-weight: 400;
             line-height: ${RF("35px")};
             letter-spacing: 0em;

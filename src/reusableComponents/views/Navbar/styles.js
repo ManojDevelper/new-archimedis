@@ -20,7 +20,7 @@ export const NavbarStyle = styled.div`
       display: flex;
       align-items: center;
       img {
-        max-height: 80px;
+        max-height: 60px;
       }
     }
 
@@ -42,7 +42,7 @@ export const NavbarStyle = styled.div`
           align-items: center;
           cursor: pointer;
           font-family: Inter;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 600;
           line-height: 19px;
           letter-spacing: -0.01em;
@@ -56,7 +56,7 @@ export const NavbarStyle = styled.div`
       .contact-button {
         margin-left: 20px;
         font-family: Inter;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         line-height: 19px;
         letter-spacing: -0.01em;

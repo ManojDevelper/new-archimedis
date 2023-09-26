@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BookDemoStyle } from "./styles";
 import { Col, Row } from "antd";
 import ButtonCompo from "../../../reusableComponents/views/Button";
-import bookDemoImg from "../../../assets/reusableComponents/bookDemo/bookDemoImg2.png";
+// import bookDemoImg from "../../../assets/reusableComponents/bookDemo/bookDemoImg2.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

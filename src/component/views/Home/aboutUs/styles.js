@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import * as palette from "../../../../styles/variables";
-import {
-  RF,
-  MRF
-} from "../../../../reusableComponents/Function/functions";
+import { RF, MRF } from "../../../../reusableComponents/Function/functions";
 
 export const AboutUsStyle = styled.div`
   .about-us {
+    .about_card_data {
+      width: ${RF("700px")};
+    }
     h1 {
       font-size: ${RF("48px")};
       font-weight: 700;
@@ -26,7 +26,7 @@ export const AboutUsStyle = styled.div`
       padding: ${RF("10px")} 0 ${RF("27px")};
     }
     .aboutus-top {
-      padding:${RF("50px")} ${RF("90px")} ${RF("100px")} ${RF("100px")};
+      padding: ${RF("50px")} ${RF("90px")} ${RF("100px")} ${RF("100px")};
     }
 
     .aboutus-container-main {
@@ -37,13 +37,13 @@ export const AboutUsStyle = styled.div`
       background-color: #ebf6fa;
       width: 100%;
     }
-    
+
     .aboutus-bg-container {
       width: ${RF("650px")};
       height: ${RF("421px")};
       position: relative;
       margin-left: ${RF("80px")};
-      background-color: #275CBE;
+      background-color: #275cbe;
       .zoom_img {
         position: absolute;
         width: 100%;
@@ -56,16 +56,18 @@ export const AboutUsStyle = styled.div`
       }
     }
   }
-  }
 
   @media (max-width: 650px) {
     .about-us {
       padding-top: ${MRF("40px")};
       padding-bottom: ${MRF("40px")};
+      .about_card_data {
+        width: 100%;
+      }
       .aboutus-top {
         .aboutus-container-main {
           flex-direction: column-reverse;
-          .abous_card_data {
+          .about_card_data {
             margin-top: ${MRF("50px")};
             text-align: center;
             h1 {
@@ -73,17 +75,17 @@ export const AboutUsStyle = styled.div`
             }
             .aboutus-text {
               font-size: ${MRF("16")};
-        font-weight: 500;
-        line-height: ${MRF("26px")};
-        width: ${MRF("410px")};
-        margin-top: ${MRF("17px")};
+              font-weight: 500;
+              line-height: ${MRF("26px")};
+              width: ${MRF("410px")};
+              margin-top: ${MRF("17px")};
             }
             .banner-btn {
               width: ${MRF("182px")};
               height: ${MRF("52px")};
               font-size: ${MRF("16px")};
               border-radius: ${MRF("8px")};
-              margin: ${MRF("17px")} auto auto auto
+              margin: ${MRF("17px")} auto auto auto;
             }
           }
           .aboutus-bg-container {

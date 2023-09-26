@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { WeDoStyle } from "./styles";
-import { Card, Col, Row, Carousel } from "antd";
+import { Carousel } from "antd";
 import wedoImg1 from "../../../../../src/assets/home/weDo/wedo-img1.png";
 import wedoImg2 from "../../../../../src/assets/home/weDo/wedo-img2.png";
 import wedoImg3 from "../../../../../src/assets/home/weDo/wedo-img3.png";
@@ -8,7 +8,6 @@ import ButtonCompo from "../../../../reusableComponents/views/Button";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const { Meta } = Card;
 const WeDo = () => {
   useEffect(() => {
     AOS.init({
@@ -27,14 +26,14 @@ const WeDo = () => {
     console.log(currentSlide);
   };
 
-  let carousel = React.createRef();
+  // let carousel = React.createRef();
 
-  const next = () => {
-    carousel.next();
-  }
-  const previous = () => {
-    carousel.prev();
-  }
+  // const next = () => {
+  //   carousel.next();
+  // }
+  // const previous = () => {
+  //   carousel.prev();
+  // }
 
   const props = {
     dots: false,

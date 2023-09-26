@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import * as palette from "../../../../styles/variables";
-import {pixFun, MobPixFun, RF, MRF} from "../../../../reusableComponents/Function/functions";
+// import * as palette from "../../../../styles/variables";
+import {RF, MRF} from "../../../../reusableComponents/Function/functions";
 
 export const WhyUsStyle = styled.div`
   background: #ebf6fa;
@@ -40,17 +40,20 @@ export const WhyUsStyle = styled.div`
       background-color: #fff !important;
       .about-title {
         font-size: ${RF('24px')};
+        font-family: IBM Plex Sans;
         font-weight: 600;
         line-height: ${RF('29px')};
       }
       .about-desc-title {
         font-size: ${RF('24px')};
         font-weight: 700;
+        font-family: IBM Plex Sans;
         line-height: ${RF('32px')};
       }
       .casestudy-text {
         font-size: ${RF('18px')};
         font-weight: 400;
+        font-family: IBM Plex Sans;
         line-height: ${RF('28px')};
       }
       .aboutus-bottom-img-container {
@@ -93,11 +96,13 @@ export const WhyUsStyle = styled.div`
       margin: auto 0;
       .aboutus-head {
         font-size: ${RF('48px')};
+        font-family: IBM Plex Sans;
         font-weight: 700;
         line-height: ${RF('40px')};
       }
       .aboutus-text {
         font-size: ${RF('19px')};
+        font-family: IBM Plex Sans;
         font-weight: 400;
         line-height: ${RF('34px')};
         width: ${RF('600px')};
@@ -113,6 +118,7 @@ export const WhyUsStyle = styled.div`
       border-radius: ${RF('16px')};
       h2 {
         font-size: ${RF('40px')};
+        font-family: IBM Plex Sans;
         font-weight: 700;
         line-height: ${RF('48px')};
         letter-spacing: ${RF('0.4px')};
@@ -121,6 +127,7 @@ export const WhyUsStyle = styled.div`
       }
       .adv-description {
         font-size: ${RF('19px')};
+        font-family: IBM Plex Sans;
         font-weight: 400;
         line-height: ${RF('34px')};
         margin: 0;
@@ -129,6 +136,7 @@ export const WhyUsStyle = styled.div`
       .adv-text {
         padding: 0 ${RF('36px')};
         font-size: ${RF('14px')};
+        font-family: IBM Plex Sans;
         font-weight: bold;
         line-height: ${RF('20px')};
       }
@@ -166,6 +174,7 @@ export const WhyUsStyle = styled.div`
         text-align: center;
         .aboutus-head {
           font-size: ${MRF("24px")};
+          font-family: IBM Plex Sans;
           font-weight: 700;
           line-height: ${MRF("31px")};
           letter-spacing: ${MRF("0.4px")};
@@ -173,6 +182,7 @@ export const WhyUsStyle = styled.div`
         }
         .aboutus-text {
           font-size: ${MRF("16px")};
+          font-family: IBM Plex Sans;
           font-weight: 400;
           line-height: ${MRF("30px")};
           text-align: center;
@@ -183,6 +193,7 @@ export const WhyUsStyle = styled.div`
           width: ${MRF("182px")};
           height: ${MRF("52px")};
           font-size: ${MRF("16px")};
+          font-family: IBM Plex Sans;
           border-radius: ${MRF("8px")};
         }
       }
