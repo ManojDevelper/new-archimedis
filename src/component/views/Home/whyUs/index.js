@@ -11,6 +11,7 @@ import aboutAdv5 from '../../../../assets/home/aboutUs/aboutAdv5.svg';
 import closeBtn from '../../../../assets/home/aboutUs/closeBtn.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ArrowRightOutlined } from "@ant-design/icons";
 
 const WhyUs = () => {
 
@@ -63,6 +64,7 @@ const WhyUs = () => {
                 data-aos="fade-down" data-aos-duration="1600">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer cet lorem.
                 </p>
+                <p className='casestudy_viewmore'>View More <ArrowRightOutlined style={{ marginLeft: "5px" }} /></p>
               </div>
 
               <div className='about-side-carousal'>

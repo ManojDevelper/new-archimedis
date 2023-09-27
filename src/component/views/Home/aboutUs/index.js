@@ -29,11 +29,12 @@ const AboutUs = () => {
   }
 
   const props = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true
   };
   return (
     <AboutUsStyle>
@@ -45,10 +46,14 @@ const AboutUs = () => {
               <p className='aboutus-text'>We operate at the intersection of Digital and Life SciencesWe operate at the intersection of Digital and Life SciencesMedical DevicesCROs & Supply-ChainDigital Health  ProductsMedical ResearchDigital Health  ProductsPharma &Bio TechLife Sciences SaaSPharma & Bio TechCROs & Supply-ChainMedical DevicesLife Sciences SaaS</p>
               <ButtonCompo text="Know More" type="bg-blue-border" />
             </div>
+            <div className='aboutus-bg-container-main'>
             <div className='aboutus-bg-container'>
-              {/* <Carousel afterChange={onChange}> */}
+              <Carousel afterChange={onChange} {...props}>
               <img src={aboutus1} alt="img" className='zoom_img' />
-              {/* </Carousel> */}
+              <img src={aboutus1} alt="img" className='zoom_img' />
+              <img src={aboutus1} alt="img" className='zoom_img' />
+              </Carousel>
+            </div>
             </div>
           </div>
         </div>

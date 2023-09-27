@@ -59,6 +59,7 @@ const WeDo = () => {
               <p className="wedo_desc2">Lorem ipsum dolor sit amet consectetur. Vitae viverra orci id id lacus sed integer egestas. Euismod tristique nulla nunc dictum ac molestie vulputate. Morbi eget malesuada est ultrices aenean. Duis in sit eget pulvinar in tortor.</p>
               <ButtonCompo text="Know More"
                 type="bg-trans-border-white-txt"
+                ripple={true}
               />
             </div>
           </div>
@@ -70,6 +71,7 @@ const WeDo = () => {
               <p className="wedo_desc2">Lorem ipsum dolor sit amet consectetur. Vitae viverra orci id id lacus sed integer egestas. Euismod tristique nulla nunc dictum ac molestie vulputate. Morbi eget malesuada est ultrices aenean. Duis in sit eget pulvinar in tortor.</p>
               <ButtonCompo text="Know More"
                 type="bg-trans-border-white-txt"
+                ripple={true}
               />
             </div>
           </div>
@@ -81,6 +83,7 @@ const WeDo = () => {
               <p className="wedo_desc2">Lorem ipsum dolor sit amet consectetur. Vitae viverra orci id id lacus sed integer egestas. Euismod tristique nulla nunc dictum ac molestie vulputate. Morbi eget malesuada est ultrices aenean. Duis in sit eget pulvinar in tortor.</p>
               <ButtonCompo text="Know More"
                 type="bg-trans-border-white-txt"
+                ripple={true}
               />
             </div>
           </div>
@@ -104,6 +107,7 @@ const WeDo = () => {
                 <p className="wedo_desc2">Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users</p>
                 <ButtonCompo text="Know More"
                   type="bg-trans-border-white-txt"
+                          ripple={true}
                 />
               </div>
             </div>
@@ -115,6 +119,7 @@ const WeDo = () => {
                 <p className="wedo_desc2">Customized digital tools exclusively designed for life science users. Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users Customized digital tools exclusively designed for life science users</p>
                 <ButtonCompo text="Know More"
                   type="bg-trans-border-white-txt"
+                          ripple={true}
                 />
               </div>
             </div>
@@ -126,6 +131,7 @@ const WeDo = () => {
                 <p className="wedo_desc2">Lorem ipsum dolor sit amet consectetur. Vitae viverra orci id id lacus sed integer egestas. Euismod tristique nulla nunc dictum ac molestie vulputate. Morbi eget malesuada est ultrices aenean. Duis in sit eget pulvinar in tortor.</p>
                 <ButtonCompo text="Know More"
                   type="bg-trans-border-white-txt"
+                          ripple={true}
                 />
               </div>
             </div>

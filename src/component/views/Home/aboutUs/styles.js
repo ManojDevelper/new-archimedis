@@ -38,14 +38,19 @@ export const AboutUsStyle = styled.div`
       width: 100%;
     }
 
-    .aboutus-bg-container {
+    .aboutus-bg-container-main {
       width: ${RF("650px")};
       height: ${RF("421px")};
       position: relative;
       margin-left: ${RF("80px")};
       background-color: #275cbe;
+    .aboutus-bg-container {
+      position: absolute;
+      width: ${RF("650px")};
+      height: ${RF("421px")};
+      right: ${RF("20px")};
+      top: ${RF("20px")};
       .zoom_img {
-        position: absolute;
         width: 100%;
         transition: transform 0.2s;
         right: ${RF("24px")};
@@ -54,6 +59,7 @@ export const AboutUsStyle = styled.div`
       .zoom_img:hover {
         transform: scale(1.02);
       }
+    }
     }
   }
 
@@ -88,6 +94,9 @@ export const AboutUsStyle = styled.div`
               margin: ${MRF("17px")} auto auto auto;
             }
           }
+          .aboutus-bg-container-main {
+            width: ${MRF("354px")};
+            height: ${MRF("227px")};
           .aboutus-bg-container {
             width: ${MRF("354px")};
             height: ${MRF("227px")};
@@ -97,6 +106,7 @@ export const AboutUsStyle = styled.div`
               right: ${MRF("15px")};
               top: ${MRF("15px")};
             }
+          }
           }
         }
       }

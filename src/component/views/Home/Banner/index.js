@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BannerStyle } from "./styles";
-import { Col, Row } from "antd";
+import { Col, Row, Button } from "antd";
 import ButtonCompo from "../../../../reusableComponents/views/Button";
 import bannerRes from '../../../../assets/home/banner/bannerRes.png';
 import facebook from '../../../../assets/home/banner/banner_facebook.png';
@@ -19,6 +19,7 @@ const Banner = () => {
     });
     AOS.refresh();
   }, []);
+
   return (
     <BannerStyle>
       <div className="banner">

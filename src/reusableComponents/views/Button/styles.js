@@ -7,6 +7,67 @@ import {
 } from "../../../reusableComponents/Function/functions";
 
 export const ButtonStyle = styled.div`
+${'' /* ripple btn styles */}
+.ripple_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: ${RF("218px")};
+    height: ${RF("56px")};
+    cursor: pointer;
+    font-size: ${RF("18px")};
+    font-weight: 700;
+    border-radius: ${RF("8px")};
+    margin: ${RF("25px")} auto auto auto;
+    border: ${RF("1.5px")} solid #CCCCCC;
+    .btnCont {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white !important;
+      &:hover, &:active, &:focus {
+        color: black !important;
+      }
+      &:hover {
+        border-color: blue;
+        .btn-bg {
+          width: 282%;
+          height: ${133*2.25}%;
+        }
+      }
+      .btn-bg {
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        width: 0%;
+        height: 0%;
+        background-color: #fff;
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+    .arrow {
+      margin-left: ${RF("14px")};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: margin 0.3s ease-in-out;
+    }
+    &:hover {
+      .arrow {
+        margin-left: ${RF("18px")};
+      }
+    }
+  }
+
+  ${'' /* Normal Btn styles */}
   .banner-btn {
     display: flex;
     justify-content: center;

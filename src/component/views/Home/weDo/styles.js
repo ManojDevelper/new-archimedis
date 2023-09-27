@@ -84,17 +84,12 @@ export const WeDoStyle = styled.div`
           .wedo_desc2 {
             display: none;
           }
-          .banner-btn {
-            display: none;
-            width: ${RF("140px")};
-            height: ${RF("40px")};
-            font-size: ${RF("16px")};
-            border-radius: ${RF("4px")};
-            margin: ${RF("35px")} auto auto auto;
-            .back_animation {
-              background-color: black;
-          backdrop-filter: blur(5px);
-            }
+          .ripple_btn {
+            width: ${RF("155px")} !important;
+            height: ${RF("50px")} !important;
+            font-size: ${RF("16px")} !important;
+            border-radius: ${RF("4px")} !important;
+            margin: ${RF("35px")} auto auto auto !important;
           }
         }
       }
@@ -164,12 +159,12 @@ export const WeDoStyle = styled.div`
               line-height: ${MRF("22px")};
               margin: ${MRF("44px")} auto auto auto;
             }
-            .banner-btn {
-              width: ${MRF("130px")};
-              height: ${MRF("43px")};
-              font-size: ${MRF("14px")};
-              border-radius: ${MRF("6px")};
-              margin: ${MRF("17px")} auto auto auto;
+            .ripple_btn {
+              width: ${MRF("130px")} !important;
+              height: ${MRF("43px")} !important;
+              font-size: ${MRF("14px")} !important;
+              border-radius: ${MRF("6px")} !important;
+              margin: ${MRF("17px")} auto auto auto !important;
             }
           }
         }

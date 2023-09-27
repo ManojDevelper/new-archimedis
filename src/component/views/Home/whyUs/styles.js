@@ -1,29 +1,40 @@
 import styled from "styled-components";
 // import * as palette from "../../../../styles/variables";
-import {RF, MRF} from "../../../../reusableComponents/Function/functions";
+import { RF, MRF } from "../../../../reusableComponents/Function/functions";
 
 export const WhyUsStyle = styled.div`
   background: #ebf6fa;
-  height: ${RF('650px')};
+  height: ${RF("660px")};
+  .casestudy_viewmore {
+    font-family: Inter;
+font-size: ${RF("18px")};
+font-weight: 500;
+line-height: ${RF("22px")};
+color: #275CBE;
+cursor: pointer;
+@media (max-width: 650px) {
+  font-size: ${MRF("13px")};
+}
+  }
   @media (max-width: 650px) {
     height: fit-content;
   }
   .ant-carousel .slick-dots {
     width: fit-content !important;
-    bottom: -${RF('10px')};
+    bottom: -${RF("10px")};
     .slick-active {
-      width: ${RF('114px')} !important;
+      width: ${RF("114px")} !important;
       button {
-        height: ${RF('7px')};
-        border-radius: ${RF('10px')};
+        height: ${RF("7px")};
+        border-radius: ${RF("10px")};
         background: #275cbe !important;
       }
     }
 
     li {
       button {
-        height: ${RF('7px')};
-        border-radius: ${RF('10px')};
+        height: ${RF("7px")};
+        border-radius: ${RF("10px")};
         background: pink !important;
       }
     }
@@ -31,30 +42,30 @@ export const WhyUsStyle = styled.div`
 
   .about-us {
     display: flex !important;
-    padding: ${RF('25px')} ${RF('100px')} ${RF('25px')} ${RF('100px')};
+    padding: ${RF("25px")} ${RF("100px")} ${RF("25px")} ${RF("100px")};
 
     .aboutus-bottom-casestudy {
-      width: ${RF('602px')};
-      height: ${RF('545px')};
-      padding: 0 ${RF('25px')} ${RF('50px')} ${RF('25px')} !important;
+      width: ${RF("550px")};
+      height: ${RF("560px")};
+      padding: 0 ${RF("25px")} ${RF("50px")} ${RF("25px")} !important;
       background-color: #fff !important;
       .about-title {
-        font-size: ${RF('24px')};
-        font-family: IBM Plex Sans;
+        font-size: ${RF("24px")};
         font-weight: 600;
-        line-height: ${RF('29px')};
+        line-height: ${RF("29px")};
+        font-family: "IBM Plex Sans";
       }
       .about-desc-title {
-        font-size: ${RF('24px')};
+        font-size: ${RF("24px")};
         font-weight: 700;
-        font-family: IBM Plex Sans;
-        line-height: ${RF('32px')};
+        line-height: ${RF("32px")};
+        font-family: "IBM Plex Sans";
       }
       .casestudy-text {
-        font-size: ${RF('18px')};
+        font-size: ${RF("18px")};
         font-weight: 400;
-        font-family: IBM Plex Sans;
-        line-height: ${RF('28px')};
+        line-height: ${RF("28px")};
+        font-family: "IBM Plex Sans";
       }
       .aboutus-bottom-img-container {
         img {
@@ -86,7 +97,7 @@ export const WhyUsStyle = styled.div`
         .aboutus-bottom-img-container {
           width: fit-content;
           img {
-            width: 87% !important;
+            width: 91% !important;
           }
         }
       }
@@ -95,55 +106,55 @@ export const WhyUsStyle = styled.div`
     .aboutus-bottom-whyus {
       margin: auto 0;
       .aboutus-head {
-        font-size: ${RF('48px')};
-        font-family: IBM Plex Sans;
+        font-size: ${RF("48px")};
+        font-family: "IBM Plex Sans";
         font-weight: 700;
-        line-height: ${RF('40px')};
+        line-height: ${RF("40px")};
       }
       .aboutus-text {
-        font-size: ${RF('19px')};
-        font-family: IBM Plex Sans;
+        font-size: ${RF("19px")};
+        font-family: "IBM Plex Sans";
         font-weight: 400;
-        line-height: ${RF('34px')};
-        width: ${RF('600px')};
+        line-height: ${RF("34px")};
+        width: ${RF("600px")};
       }
     }
 
     .aboutus-bottom-advantages-content {
       position: relative;
-      max-width: ${RF('600px')};
+      max-width: ${RF("600px")};
       background-color: #ffffff;
-      padding: ${RF('40px')} ${RF('20px')} ${RF('40px')} ${RF('20px')};
+      padding: ${RF("40px")} ${RF("20px")} ${RF("40px")} ${RF("20px")};
       text-align: center;
-      border-radius: ${RF('16px')};
+      border-radius: ${RF("16px")};
       h2 {
-        font-size: ${RF('40px')};
-        font-family: IBM Plex Sans;
+        font-size: ${RF("40px")};
         font-weight: 700;
-        line-height: ${RF('48px')};
-        letter-spacing: ${RF('0.4px')};
+        line-height: ${RF("48px")};
+        letter-spacing: ${RF("0.4px")};
         margin: 0;
-        padding: ${RF('18px')} 0;
+        padding: ${RF("18px")} 0;
+        font-family: "IBM Plex Sans";
       }
       .adv-description {
-        font-size: ${RF('19px')};
-        font-family: IBM Plex Sans;
+        font-size: ${RF("19px")};
         font-weight: 400;
-        line-height: ${RF('34px')};
+        line-height: ${RF("34px")};
         margin: 0;
-        padding: ${RF('18px')} ${RF('60px')} ${RF('32px')};
+        font-family: "IBM Plex Sans";
+        padding: ${RF("18px")} ${RF("60px")} ${RF("32px")};
       }
       .adv-text {
-        padding: 0 ${RF('36px')};
-        font-size: ${RF('14px')};
-        font-family: IBM Plex Sans;
+        padding: 0 ${RF("36px")};
+        font-size: ${RF("14px")};
+
         font-weight: bold;
-        line-height: ${RF('20px')};
+        line-height: ${RF("20px")};
       }
       .close-btn {
         position: absolute;
-        top: ${RF('18px')};
-        right: ${RF('18px')};
+        top: ${RF("18px")};
+        right: ${RF("18px")};
         cursor: pointer;
         transition: 0.35s ease-in-out;
       }
@@ -174,7 +185,6 @@ export const WhyUsStyle = styled.div`
         text-align: center;
         .aboutus-head {
           font-size: ${MRF("24px")};
-          font-family: IBM Plex Sans;
           font-weight: 700;
           line-height: ${MRF("31px")};
           letter-spacing: ${MRF("0.4px")};
@@ -182,7 +192,6 @@ export const WhyUsStyle = styled.div`
         }
         .aboutus-text {
           font-size: ${MRF("16px")};
-          font-family: IBM Plex Sans;
           font-weight: 400;
           line-height: ${MRF("30px")};
           text-align: center;
@@ -193,7 +202,6 @@ export const WhyUsStyle = styled.div`
           width: ${MRF("182px")};
           height: ${MRF("52px")};
           font-size: ${MRF("16px")};
-          font-family: IBM Plex Sans;
           border-radius: ${MRF("8px")};
         }
       }

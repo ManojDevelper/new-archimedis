@@ -8,6 +8,7 @@ import {
 } from "../../../reusableComponents/Function/functions";
 
 export const BookDemoStyle = styled.div`
+  font-family: 'IBM Plex Sans' !important;
   .book-demo-mob {
     display: none;
   }
@@ -93,7 +94,6 @@ export const BookDemoStyle = styled.div`
         padding: ${MRF("10px")} ${MRF("40px")};
         height: auto;
         border: ${MRF("2px")} solid #275cbe;
-        font-family: IBM Plex Sans;
         font-size: ${MRF("16px")};
         font-weight: 600;
         line-height: ${MRF("21px")};
@@ -107,7 +107,6 @@ export const BookDemoStyle = styled.div`
         border: ${MRF("2px")} solid #ffffff;
         padding: ${MRF("10px")} ${MRF("73px")};
         color: #ffffff;
-        font-family: IBM Plex Sans;
         font-size: ${MRF("16px")};
         font-weight: 600;
         line-height: ${MRF("21px")};
@@ -115,7 +114,6 @@ export const BookDemoStyle = styled.div`
         margin-top: ${MRF("18px")};
       }
       h1 {
-        font-family: IBM Plex Sans;
         font-size: ${MRF("24px")};
         font-weight: 700;
         line-height: ${MRF("31px")};
@@ -124,7 +122,6 @@ export const BookDemoStyle = styled.div`
         margin: 0;
       }
       p {
-        font-family: IBM Plex Sans;
         font-size: ${MRF("16px")};
         font-weight: 400;
         line-height: ${MRF("23px")};
