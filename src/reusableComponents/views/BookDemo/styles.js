@@ -64,16 +64,16 @@ export const BookDemoStyle = styled.div`
       }
     }
     .bg-trans-border-white-txt {
-      background-color: #fff !important;
+      background-color: transparent !important;
       .btnCont {
-        color: #275CBE !important;
+        color: #fff !important;
         &:hover,
         &:active,
         &:focus {
-          color: #fff !important;
+          color: #275CBE !important;
         }
         .btn-bg {
-          background-color: #275CBE !important;
+          background-color: #fff !important;
         }
       }
     }
