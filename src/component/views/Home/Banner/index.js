@@ -38,6 +38,7 @@ const Banner = () => {
                   "data-aos": "fade-up",
                   "data-aos-duration": "2400"
                 }}
+                ripple={true}
               />
             </div>
           </Col>
@@ -76,7 +77,7 @@ const Banner = () => {
           {/* <Button className="banner-btn">
               Get in Touch <ArrowRightOutlined style={{ marginLeft: "5px" }} />
             </Button> */}
-          <ButtonCompo text="Know More" type="bg-blue-border" />
+          <ButtonCompo text="Know More" type="bg-blue-border" ripple={true}/>
         </div>
 
       </div>

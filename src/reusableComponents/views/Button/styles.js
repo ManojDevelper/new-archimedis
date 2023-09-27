@@ -12,7 +12,7 @@ ${'' /* ripple btn styles */}
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px !important;
+    padding: 0px;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -22,7 +22,6 @@ ${'' /* ripple btn styles */}
     font-size: ${RF("18px")};
     font-weight: 700;
     border-radius: ${RF("8px")};
-    margin: ${RF("25px")} auto auto auto;
     border: ${RF("1.5px")} solid #CCCCCC;
     .btnCont {
       max-width: 100%;
@@ -30,9 +29,9 @@ ${'' /* ripple btn styles */}
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white !important;
+      color: white;
       &:hover, &:active, &:focus {
-        color: black !important;
+        color: black;
       }
       &:hover {
         border-color: blue;

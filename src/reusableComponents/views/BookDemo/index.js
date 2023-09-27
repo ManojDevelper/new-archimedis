@@ -33,6 +33,7 @@ const BookDemo = () => {
                   "data-aos": "fade-down",
                   "data-aos-duration": "2000"
                 }}
+                ripple={true}
               />
               <ButtonCompo
                 text="Contact us"
@@ -42,6 +43,7 @@ const BookDemo = () => {
                   "data-aos": "fade-down",
                   "data-aos-duration": "2000"
                 }}
+                ripple={true}
               />
             </div>
           </Col>
@@ -60,6 +62,7 @@ const BookDemo = () => {
                 "data-aos": "fade-down",
                 "data-aos-duration": "2000"
               }}
+              ripple={true}
             />
             <ButtonCompo
               text="Contact us"
@@ -69,6 +72,7 @@ const BookDemo = () => {
                 "data-aos": "fade-down",
                 "data-aos-duration": "2000"
               }}
+              ripple={true}
             />
           </div>
         </div>

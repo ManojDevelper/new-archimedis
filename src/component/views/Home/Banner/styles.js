@@ -1,8 +1,5 @@
 import styled from "styled-components";
-import {
-  RF,
-  MRF
-} from "../../../../reusableComponents/Function/functions";
+import { RF, MRF } from "../../../../reusableComponents/Function/functions";
 // import * as palette from "../../../../styles/variables";
 // import bannerBg from "../../../../../src/assets/home/banner/bannerBg.png";
 
@@ -13,7 +10,7 @@ export const BannerStyle = styled.div`
   }
 
   .banner {
-    height:  ${RF("577px")};
+    height: ${RF("577px")};
     position: relative;
 
     h1 {
@@ -22,7 +19,7 @@ export const BannerStyle = styled.div`
       font-weight: 700;
       line-height: ${RF("80px")};
       margin-bottom: 0;
-      font-family: 'IBM Plex Sans';
+      font-family: "IBM Plex Sans";
     }
 
     p {
@@ -32,17 +29,29 @@ export const BannerStyle = styled.div`
       line-height: ${RF("34px")};
       margin-top: ${RF("10px")};
       width: ${RF("575px")};
-      font-family: 'IBM Plex Sans';
+      font-family: "IBM Plex Sans";
     }
 
     .banner-left {
       padding: ${RF("35px")} 0 ${RF("168px")} ${RF("100px")};
     }
 
-    .banner-btn {
+    .ripple_btn {
       width: ${RF("218px")};
       height: ${RF("56px")};
       font-size: ${RF("18px")};
+      background-color: #fff !important;
+      .btnCont {
+        color: #275cbe !important;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #fff !important;
+        }
+        .btn-bg {
+          background-color: #275cbe !important;
+        }
+      }
     }
 
     .bannerImg {
@@ -112,13 +121,16 @@ export const BannerStyle = styled.div`
         text-align: center;
         color: #212121;
       }
-      .banner-btn {
+      .ripple_btn {
         margin-left: auto;
         margin-right: auto;
         width: ${MRF("182px")};
         height: ${MRF("52px")};
         font-size: ${MRF("16px")};
         border-radius: ${MRF("8px")};
+        .btnCont {
+          color: #275cbe !important;
+        }
       }
       ${
         "" /* 

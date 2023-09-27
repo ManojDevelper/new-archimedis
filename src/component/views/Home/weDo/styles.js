@@ -90,6 +90,7 @@ export const WeDoStyle = styled.div`
             font-size: ${RF("16px")} !important;
             border-radius: ${RF("4px")} !important;
             margin: ${RF("35px")} auto auto auto !important;
+            background-color: transparent !important;
           }
         }
       }

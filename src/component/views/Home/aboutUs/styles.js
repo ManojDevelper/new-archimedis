@@ -6,6 +6,18 @@ export const AboutUsStyle = styled.div`
   .about-us {
     .about_card_data {
       width: ${RF("700px")};
+      .ripple_btn {
+      background-color: #275CBE !important;
+      .btnCont {
+        color: #fff !important;
+        &:hover, &:active, &:focus {
+        color: #275CBE !important;
+      }
+      .btn-bg {
+        background-color: #fff !important;
+      }
+      }
+    }
     }
     h1 {
       font-size: ${RF("48px")};
@@ -86,7 +98,7 @@ export const AboutUsStyle = styled.div`
               width: ${MRF("410px")};
               margin-top: ${MRF("17px")};
             }
-            .banner-btn {
+            .ripple_btn {
               width: ${MRF("182px")};
               height: ${MRF("52px")};
               font-size: ${MRF("16px")};

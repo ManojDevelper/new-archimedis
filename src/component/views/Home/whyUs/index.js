@@ -104,7 +104,7 @@ const WhyUs = () => {
           <div className='aboutus-bottom-whyus' style={{ padding: '0 66px' }}>
             <h1 className='aboutus-head' data-aos="fade-down" data-aos-duration="1000">Why us?</h1>
             <p className='aboutus-text' data-aos="fade-down" data-aos-duration="1200">We operate at the intersection of Digital and Life SciencesWe operate at the intersection of Digital and Life SciencesMedical DevicesCROs & Supply-ChainDigital Health  ProductsMedical ResearchDigital Health  ProductsPharma &Bio TechLife Sciences SaaSPharma & Bio TechCROs & Supply-ChainMedical DevicesLife Sciences SaaS</p>
-            <ButtonCompo text="Know More" type="bg-blue-border-black-txt" onClickHandle={() => next()} 
+            <ButtonCompo ripple={true} text="Know More" type="bg-blue-border-black-txt" onClickHandle={() => next()} 
               aos={{
                 "data-aos": "fade-down",
                 "data-aos-duration": "1500"
@@ -118,7 +118,7 @@ const WhyUs = () => {
           <div className='aboutus-bottom-whyus' style={{ padding: '0 66px' }}>
             <h1 className='aboutus-head'>Why us?</h1>
             <p className='aboutus-text'>We operate at the intersection of Digital and Life SciencesWe operate at the intersection of Digital and Life SciencesMedical DevicesCROs & Supply-ChainDigital Health  ProductsMedical ResearchDigital Health  ProductsPharma &Bio TechLife Sciences SaaSPharma & Bio TechCROs & Supply-ChainMedical DevicesLife Sciences SaaS</p>
-            <ButtonCompo text="View Less" type="bg-blue-border-black-txt" onClickHandle={() => previous()} />
+            <ButtonCompo ripple={true} text="View Less" type="bg-blue-border-black-txt" onClickHandle={() => previous()} />
           </div>
 
           {/* test popup */}

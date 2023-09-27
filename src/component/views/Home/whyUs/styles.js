@@ -118,6 +118,20 @@ cursor: pointer;
         line-height: ${RF("34px")};
         width: ${RF("600px")};
       }
+      .ripple_btn {
+      background-color: #fff !important;
+      .btnCont {
+        color: black !important;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #fff !important;
+        }
+        .btn-bg {
+          background-color: #275cbe !important;
+        }
+      }
+    }
     }
 
     .aboutus-bottom-advantages-content {
@@ -197,7 +211,7 @@ cursor: pointer;
           text-align: center;
           width: 100%;
         }
-        .banner-btn {
+        .ripple_btn {
           margin: auto;
           width: ${MRF("182px")};
           height: ${MRF("52px")};

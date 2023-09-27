@@ -47,19 +47,35 @@ export const BookDemoStyle = styled.div`
       display: flex;
       justify-content: center;
     }
-    .bg-blue-border {
-      background-color: white !important;
-    }
-    .bg-trans-border-white-txt .back_animation {
-      background-color: black !important;
-    }
-
-    .bg-trans-border-white-txt {
-      background-color: white !important;
-    }
-    .banner-btn {
+    .ripple_btn {
       width: ${RF("268px")} !important;
       margin-right: ${RF("20px")};
+      background-color: #275CBE !important;
+      .btnCont {
+        color: #fff !important;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #275CBE !important;
+        }
+        .btn-bg {
+          background-color: #fff !important;
+        }
+      }
+    }
+    .bg-trans-border-white-txt {
+      background-color: #fff !important;
+      .btnCont {
+        color: #275CBE !important;
+        &:hover,
+        &:active,
+        &:focus {
+          color: #fff !important;
+        }
+        .btn-bg {
+          background-color: #275CBE !important;
+        }
+      }
     }
     .book-demo-right {
       text-align: center;
@@ -128,7 +144,7 @@ export const BookDemoStyle = styled.div`
         color: #ffffff;
         margin: ${MRF("8px")} 0 ${MRF("35px")};
       }
-      .banner-btn {
+      .ripple_btn {
         margin-left: auto;
         margin-right: auto;
         width: ${MRF("245px")};
