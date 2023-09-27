@@ -80,6 +80,7 @@ const WhyUs = () => {
                 <p className='casestudy-text'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer cet lorem.
                 </p>
+                <p className='casestudy_viewmore'>View More <ArrowRightOutlined style={{ marginLeft: "5px" }} /></p>
               </div>
 
               <div className='about-side-carousal'>
@@ -95,6 +96,7 @@ const WhyUs = () => {
                 <p className='casestudy-text'>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio in et, lectus sit lorem id integer cet lorem.
                 </p>
+                <p className='casestudy_viewmore'>View More <ArrowRightOutlined style={{ marginLeft: "5px" }} /></p>
               </div>
             </Carousel>
           </div>
