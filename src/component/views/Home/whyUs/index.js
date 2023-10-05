@@ -123,7 +123,7 @@ const WhyUs = () => {
 
           {/* test popup */}
           <div className='aboutus-bottom-advantages-content'>
-            <img className='close-btn' src={closeBtn} alt="closeBtn" onClick={() => previous()} />
+            {/* <img className='close-btn' src={closeBtn} alt="closeBtn" onClick={() => previous()} /> */}
             <h2>
               The Archimedis Advantage
             </h2>

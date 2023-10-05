@@ -7,14 +7,14 @@ export const WhyUsStyle = styled.div`
   height: ${RF("660px")};
   .casestudy_viewmore {
     font-family: Inter;
-font-size: ${RF("18px")};
-font-weight: 500;
-line-height: ${RF("22px")};
-color: #275CBE;
-cursor: pointer;
-@media (max-width: 650px) {
-  font-size: ${MRF("13px")};
-}
+    font-size: ${RF("18px")};
+    font-weight: 500;
+    line-height: ${RF("22px")};
+    color: #275cbe;
+    cursor: pointer;
+    @media (max-width: 650px) {
+      font-size: ${MRF("13px")};
+    }
   }
   @media (max-width: 650px) {
     height: fit-content;
@@ -119,19 +119,19 @@ cursor: pointer;
         width: ${RF("600px")};
       }
       .ripple_btn {
-      background-color: #fff !important;
-      .btnCont {
-        color: black !important;
-        &:hover,
-        &:active,
-        &:focus {
-          color: #fff !important;
-        }
-        .btn-bg {
-          background-color: #275cbe !important;
+        background-color: #fff !important;
+        .btnCont {
+          color: black !important;
+          &:hover,
+          &:active,
+          &:focus {
+            color: #fff !important;
+          }
+          .btn-bg {
+            background-color: #275cbe !important;
+          }
         }
       }
-    }
     }
 
     .aboutus-bottom-advantages-content {
