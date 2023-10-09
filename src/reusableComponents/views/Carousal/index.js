@@ -7,11 +7,14 @@ const CariousalCompo = (props) => {
   const [show, setShow] = useState(false);
   const [arr, setArr] = useState([...testCard]);
 
-  if (count < 10) {
-    setTimeout(() => {
-      nextFun()
-    }, 2800)
-  }
+  useEffect(() => {
+    if (count < 10) {
+      setTimeout(() => {
+        nextFun()
+      }, 2800)
+    }
+  }, [arr])
+
   const nextFun = () => {
     setCount(count >= testCard.length - 1 ? 0 : count + 1);
   };

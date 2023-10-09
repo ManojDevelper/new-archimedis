@@ -74,12 +74,12 @@ export const CariousalStyle = styled.div`
             width: 70%;
           }
           &:nth-child(3) {
-            top: ${RF("60px")};
+            top: ${RF("45px")};
             z-index: 4;
             width: 80%;
           }
           &:nth-child(2) {
-            top: ${RF("72px")};
+            top: ${RF("65px")};
             z-index: 5;
             width: 90%;
           }
@@ -106,7 +106,7 @@ export const CariousalStyle = styled.div`
   }
 
   .transformThis {
-    animation: scaleDown 350ms;
+    animation: scaleDown 200ms;
     transition: 0.5s ease-in-out;
   }
 
@@ -117,15 +117,15 @@ export const CariousalStyle = styled.div`
 
   @keyframes scaleUp {
     0% {
-      transform: scale(1.2) translateY(${RF("50px")});
+      transform: scale(1.02) translateY(${RF("50px")});
       opacity: 0;
     }
     20% {
-      transform: scale(1.1) translateY(${RF("40px")});
+      transform: scale(1.01) translateY(${RF("40px")});
       opacity: 0.1;
     }
     40% {
-      transform: scale(1.1) translateY(${RF("30px")});
+      transform: scale(1.01) translateY(${RF("30px")});
       opacity: 0.2;
     }
     60% {
