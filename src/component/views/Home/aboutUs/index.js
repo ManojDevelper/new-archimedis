@@ -35,7 +35,7 @@ const AboutUs = () => {
         <div className='aboutus-top'>
           <div className='aboutus-container-main'>
             <div data-aos="fade-right" data-aos-duration="1600" className='about_card_data'>
-              <h1>Who we are</h1>
+              <h1>Who we are.</h1>
               <p className='aboutus-text'>We operate at the intersection of Digital and Life SciencesWe operate at the intersection of Digital and Life SciencesMedical DevicesCROs & Supply-ChainDigital Health  ProductsMedical ResearchDigital Health  ProductsPharma &Bio TechLife Sciences SaaSPharma & Bio TechCROs & Supply-ChainMedical DevicesLife Sciences SaaS</p>
               <ButtonCompo text="Know More" type="bg-blue-border" ripple={true} />
             </div>
