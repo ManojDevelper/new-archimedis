@@ -106,7 +106,7 @@ export const CariousalStyle = styled.div`
   }
 
   .transformThis {
-    animation: scaleDown 300ms;
+    animation: scaleDown 350ms;
     transition: 0.5s ease-in-out;
   }
 

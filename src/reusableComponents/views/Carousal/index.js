@@ -10,13 +10,11 @@ const CariousalCompo = (props) => {
   if (count < 10) {
     setTimeout(() => {
       nextFun()
-    }, 2000)
+    }, 2800)
   }
   const nextFun = () => {
     setCount(count >= testCard.length - 1 ? 0 : count + 1);
   };
-
-  console.log("count", count);
   useEffect(() => {
     array_move();
   }, [count]);
@@ -29,7 +27,6 @@ const CariousalCompo = (props) => {
     arr.splice(arrL, 1, {
       img: itm?.img
     });
-    console.log("spl2", arr);
     setTimeout(() => {
       setShow(true);
       setArr([...arr]);
