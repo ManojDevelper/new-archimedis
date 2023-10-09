@@ -4,9 +4,10 @@ import aboutus1 from '../../../../assets/home/aboutUs/aboutus-1.png';
 import videoCover1 from "../../../../assets/reusableComponents/footer/video-cover1.png";
 import videoCover2 from "../../../../assets/reusableComponents/footer/video-cover2.png";
 import ButtonCompo from "../../../../reusableComponents/views/Button";
+import CariousalCompo from "../../../../reusableComponents/views/Carousal";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { StackedCarousel } from "react-stacked-carousel";
+// import { StackedCarousel } from "react-stacked-carousel";
 import "react-stacked-carousel/dist/index.css";
 
 const AboutUs = () => {
@@ -29,6 +30,23 @@ const AboutUs = () => {
     slidesToScroll: 1,
     autoplay: true
   };
+  const testCard = [
+    {
+      bg: "violet",
+      next: "card",
+      img: aboutus1
+    },
+    {
+      bg: "#FFCC00",
+      next: "card",
+      img: videoCover1
+    },
+    {
+      bg: "#FF3B30",
+      next: "card",
+      img: videoCover2
+    }
+  ]
   return (
     <AboutUsStyle>
       <div className='about-us'>
@@ -46,7 +64,7 @@ const AboutUs = () => {
               <img src={aboutus1} alt="img" className='zoom_img' />
               <img src={aboutus1} alt="img" className='zoom_img' />
               </Carousel> */}
-                <StackedCarousel
+                {/* <StackedCarousel
                   autoRotate={true}
                   onCardChange={onCardChange}
                   containerClassName={"container"}
@@ -64,7 +82,8 @@ const AboutUs = () => {
                   <div key={"child3"}>
                     <img src={videoCover2} className="image" alt="img" />
                   </div>
-                </StackedCarousel>
+                </StackedCarousel> */}
+                <CariousalCompo testCard={testCard}/>
               </div>
             </div>
           </div>
