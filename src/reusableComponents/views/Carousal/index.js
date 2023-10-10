@@ -24,7 +24,6 @@ const CariousalCompo = (props) => {
   }, [count]);
 
   function array_move() {
-    setShow(false);
     const arrL = arr.length;
     const itm = arr[0];
     arr.splice(0, 1);
@@ -33,9 +32,15 @@ const CariousalCompo = (props) => {
     });
     setTimeout(() => {
       setArr([...arr]);
-      setShow(true);
+      setShow(false);
     });
   }
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(true);
+    }, 100);
+  }, [arr])
 
   return (
     <CariousalStyle>

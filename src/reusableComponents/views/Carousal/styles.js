@@ -42,6 +42,7 @@ export const CariousalStyle = styled.div`
         margin: 0;
         padding: 0;
         li {
+          border: 1px solid black;
           transition: all 100ms ease-in-out;
           border-radius: ${RF("2px")};
           position: absolute;
