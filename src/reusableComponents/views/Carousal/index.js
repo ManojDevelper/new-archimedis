@@ -7,19 +7,21 @@ const CariousalCompo = (props) => {
   const [show, setShow] = useState(false);
   const [arr, setArr] = useState([...testCard]);
 
-  useEffect(() => {
-    if (count < 10) {
-      setTimeout(() => {
-        nextFun()
-      }, 2800)
-    }
-  }, [arr])
+const testTee = () => {
+  if (count < 10) {
+    setTimeout(() => {
+      nextFun()
+    }, 2800)
+  }
+}
 
   const nextFun = () => {
     setCount(count >= testCard.length - 1 ? 0 : count + 1);
   };
+  
   useEffect(() => {
     array_move();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count]);
 
   function array_move() {
@@ -33,6 +35,7 @@ const CariousalCompo = (props) => {
     setTimeout(() => {
       setShow(true);
       setArr([...arr]);
+      testTee();
     });
   }
 
@@ -45,6 +48,7 @@ const CariousalCompo = (props) => {
               ?.filter((item) => item !== undefined)
               .map((item, i) => (
                 <li
+                  key={i}
                   className={i === 0 && show ? 'card transformThis' : i !== 0 && show ? 'card transformPrev' : 'card'}
                 >
                   <img src={item?.img} alt={item?.img} />

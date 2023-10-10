@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { RF, MRF } from "../../Function/functions";
+import { RF } from "../../Function/functions";
 
 export const CariousalStyle = styled.div`
   .container {
@@ -106,12 +106,12 @@ export const CariousalStyle = styled.div`
   }
 
   .transformThis {
-    animation: scaleDown 200ms;
+    animation: scaleDown 300ms;
     transition: 0.5s ease-in-out;
   }
 
   .transformPrev {
-    animation: scaleUp 100ms;
+    animation: scaleUp 310ms;
     transition: 0.5s ease-in-out;
   }
 
