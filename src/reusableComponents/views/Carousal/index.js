@@ -39,7 +39,7 @@ const CariousalCompo = (props) => {
   useEffect(() => {
     setTimeout(() => {
       setShow(true);
-    }, 100);
+    });
   }, [arr])
 
   return (
